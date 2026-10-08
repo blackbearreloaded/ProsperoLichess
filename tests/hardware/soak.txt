@@ -1,0 +1,32 @@
+# ProsperoLichess - Hardware soak: ten minutes of Lichess TV full screen, on two channels.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Needs the console to reach lichess.org. The heap is logged every minute and
+# the frame times every ten seconds: neither may grow. Storage of its own.
+guest
+wait 420
+mark home
+# Watch is the rail's fourth entry; Cross watches full screen.
+press menu
+nav down
+nav down
+nav down
+wait 60
+press confirm
+wait 300
+press confirm
+wait 600
+mark tv
+wait 17400
+mark tv-five-minutes
+# R1 changes channel.
+press page_next
+wait 600
+mark tv-next-channel
+wait 17400
+mark tv-ten-minutes
+press back
+wait 90
+mark end
+wait 300
+quit

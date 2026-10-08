@@ -1,0 +1,5 @@
+# Values the home screen, the left menu, the status strip and the opening
+# title put on screen and do not translate (see unmarked-ok.txt).
+
+# The opening title draws the name "Lichess" one letter at a time.
+^[Liches]$

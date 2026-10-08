@@ -1,0 +1,12 @@
+# Values the app puts into its text and does not translate, for
+# "tools/strings.py unmarked": one regular expression a line. What a line
+# matches is taken out of a text before the text is checked.
+
+# The app's and the service's names.
+ProsperoLichess|PROSPERO|Lichess|lichess\.org\S*|homebrew\.page|Stockfish|Chess960|PS5|BlackBearReloaded
+# Players of the PC pictures and of the tests.
+blackbear|penguingm1|NordicKnight|tester|someone
+# Moves: e4, Nxd4, O-O, e8=Q+.
+\b(?:[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN])?|O-O(?:-O)?)[+#]?(?![A-Za-z])
+# Titles before a player's name.
+\b(?:GM|IM|FM|CM|NM|WGM|WIM|WFM|WCM|LM|BOT)\b

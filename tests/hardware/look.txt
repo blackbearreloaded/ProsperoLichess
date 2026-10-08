@@ -1,0 +1,66 @@
+# ProsperoLichess - Hardware look-around: the home screen, every page of the rail, every settings category.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Nothing is played or changed. A picture is saved at every mark; waits of 660
+# frames let the frame statistics (logged every 600 frames) cover one screen.
+# The opening title runs for about 2.6 s.
+wait 300
+mark home
+wait 660
+mark home-stats
+# Down to the shelf and along it.
+nav down
+wait 30
+nav right
+nav right
+wait 60
+mark home-shelf
+# Options hands the controller to the rail; moving along it shows each page.
+press menu
+wait 40
+mark rail
+nav down
+wait 150
+mark puzzles
+nav down
+wait 150
+mark play
+nav down
+wait 360
+mark watch
+nav down
+wait 150
+mark profile
+nav down
+wait 150
+mark settings
+# Into the settings page: its categories, one after another.
+press confirm
+wait 40
+nav down
+wait 80
+mark settings-play
+nav down
+wait 80
+mark settings-sound
+nav down
+wait 80
+mark settings-controller
+nav down
+wait 660
+mark settings-display
+nav down
+wait 80
+mark settings-about
+# Back to the rail, and up to Home.
+press back
+wait 40
+nav up
+nav up
+nav up
+nav up
+nav up
+wait 150
+mark end
+wait 600
+quit

@@ -1,0 +1,66 @@
+# ProsperoLichess - Hardware puzzles, offline: the themes, the four difficulties, a theme's puzzle with a hint, its solution and the next one.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Storage of its own, kept.
+guest
+wait 300
+press menu
+nav down
+wait 60
+press confirm
+wait 30
+press page_next
+wait 120
+mark themes
+# R2 raises the difficulty, L2 lowers it.
+press jump_next
+wait 60
+mark themes-harder
+press jump_next
+wait 60
+mark themes-hardest
+press jump_prev
+press jump_prev
+press jump_prev
+wait 60
+mark themes-easier
+press jump_next
+wait 40
+# Along and down the catalogue.
+nav right
+nav down
+nav down
+wait 60
+mark themes-focus
+nav down
+nav down
+nav down
+nav down
+wait 60
+mark themes-scrolled
+press confirm
+wait 300
+mark theme-puzzle
+press north
+wait 60
+mark theme-hint
+press west
+wait 540
+mark theme-solution
+press confirm
+wait 300
+mark theme-next
+press menu
+wait 40
+nav up
+wait 10
+press confirm
+wait 90
+mark themes-after
+# L1 is back at the modes: the records the runs left.
+press page_prev
+wait 120
+mark records
+mark end
+wait 600
+quit

@@ -1,0 +1,22 @@
+# ProsperoLichess - Hardware start: the opening title over the launch picture, then the home screen.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Pictures at the first frame, while the title arrives, when it is complete,
+# and of the home screen that follows. Storage of its own, emptied first (the
+# title is shorter under reduced motion, which an earlier run may have set).
+guest
+fresh
+wait 1
+mark title-first
+wait 24
+mark title-arriving
+wait 70
+mark title-complete
+wait 240
+mark home-arriving
+wait 240
+mark home
+wait 120
+mark end
+wait 300
+quit

@@ -1,0 +1,59 @@
+# ProsperoLichess - Hardware puzzles, offline: Puzzle Storm from the first second to the end of its clock.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Storage of its own, kept. Two moves are played blind (a wrong one costs ten
+# seconds); then the clock runs out by itself and the result is saved.
+guest
+wait 300
+press menu
+nav down
+wait 60
+press confirm
+wait 30
+nav right
+nav right
+nav right
+wait 60
+mark storm-tile
+press confirm
+wait 180
+mark storm-start
+press page_next
+wait 8
+press confirm
+wait 8
+press page_next
+wait 8
+press confirm
+wait 120
+mark storm-move-1
+press page_next
+wait 8
+press confirm
+wait 8
+press page_next
+wait 8
+press confirm
+wait 120
+mark storm-move-2
+# Square turns the board.
+press west
+wait 60
+mark storm-flipped
+press west
+wait 600
+mark storm-running
+wait 3600
+mark storm-minute
+wait 3600
+wait 3600
+mark storm-over
+# The second answer goes back to the puzzles.
+nav right
+wait 10
+press confirm
+wait 150
+mark puzzles-after
+mark end
+wait 600
+quit

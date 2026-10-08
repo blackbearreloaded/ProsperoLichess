@@ -1,0 +1,201 @@
+# ProsperoLichess - Hardware tour: Pass & Play to Scholar's mate, Storm, Themes, Settings.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Offline screens only, reached through the rail so the path is the same
+# whether or not an account is signed in. Cursor moves are screen-relative;
+# the board turns after every Pass & Play move. Waits of 660 frames let the
+# frame statistics (logged every 600 frames) cover one screen.
+# The opening title runs for about 2.6 s.
+guest
+fresh
+wait 240
+mark home
+wait 660
+mark home-stats
+# Options hands the controller to the rail. Play is its third entry; R1 twice
+# turns to the Friend tab, whose button starts Pass & Play.
+press menu
+nav down
+nav down
+wait 30
+press confirm
+wait 30
+press page_next
+wait 20
+press page_next
+wait 40
+mark play-friend
+nav down
+wait 20
+press confirm
+wait 90
+mark passplay
+wait 660
+mark passplay-stats
+# The pause menu frosts the board behind it.
+press menu
+wait 660
+mark pause-menu
+press back
+wait 40
+# 1. e4
+press confirm
+nav up
+nav up
+press confirm
+wait 60
+# 1... e5
+nav left
+nav down
+nav down
+press confirm
+nav up
+nav up
+press confirm
+wait 60
+# 2. Bc4
+nav right
+nav right
+nav down
+nav down
+nav down
+press confirm
+nav up
+nav up
+nav up
+nav left
+nav left
+nav left
+press confirm
+wait 60
+# 2... Nc6
+nav right
+nav right
+nav right
+nav right
+nav down
+nav down
+nav down
+press confirm
+nav up
+nav up
+nav left
+press confirm
+wait 60
+# 3. Qh5
+nav left
+nav left
+nav down
+nav down
+press confirm
+nav up
+nav up
+nav up
+nav up
+nav right
+nav right
+nav right
+nav right
+press confirm
+wait 60
+# 3... Nf6
+nav left
+nav left
+nav left
+nav left
+nav left
+nav left
+nav down
+nav down
+nav down
+nav down
+press confirm
+nav up
+nav up
+nav right
+press confirm
+wait 60
+# 4. Qxf7#
+nav right
+nav right
+nav right
+nav right
+nav right
+nav up
+nav up
+press confirm
+nav up
+nav up
+nav left
+nav left
+press confirm
+wait 150
+mark checkmate
+wait 660
+mark result-stats
+# The result dialog: New game, Review game, Menu.
+nav right
+nav right
+press confirm
+wait 90
+mark home-again
+# Puzzles is the second entry of the rail; Puzzle Storm is the fourth mode.
+press menu
+nav up
+wait 30
+press confirm
+wait 40
+mark puzzles
+nav right
+nav right
+nav right
+wait 20
+press confirm
+wait 720
+mark storm
+# Options opens the menu; its last row returns to the home screen.
+press menu
+wait 30
+nav up
+wait 10
+press confirm
+wait 90
+# R1 turns to the Themes section; the first theme is "Mixed themes".
+press page_next
+wait 660
+mark themes
+press confirm
+wait 300
+mark themes-puzzle
+press menu
+wait 30
+nav up
+wait 10
+press confirm
+wait 90
+# Settings is the last entry of the rail.
+press menu
+nav down
+nav down
+nav down
+nav down
+wait 30
+press confirm
+wait 40
+mark settings
+nav down
+wait 20
+press confirm
+wait 20
+# A switch goes off to the left and on to the right; leave it as it was.
+nav left
+wait 60
+mark settings-changed
+nav right
+wait 30
+press back
+press back
+wait 660
+mark end
+wait 60
+quit

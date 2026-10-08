@@ -1,0 +1,37 @@
+# ProsperoLichess - Hardware shortcuts: L1 and R1 from the side rail, and the Touchpad with no game waiting.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Storage of its own, signed out: nothing is played. From the rail R1 turns
+# the Puzzles page to Themes and the Play page to Computer and Friend, and L1
+# turns it back; the Touchpad does nothing while no game waits.
+guest
+fresh
+wait 300
+mark home
+press touch
+wait 60
+mark home-touch
+press menu
+wait 40
+nav down
+wait 150
+mark puzzles-rail
+press page_next
+wait 90
+mark puzzles-themes
+press menu
+wait 40
+nav down
+wait 150
+mark play-rail
+press page_next
+wait 90
+mark play-computer
+press page_next
+wait 90
+mark play-friend
+press page_prev
+wait 90
+mark play-back
+wait 300
+quit

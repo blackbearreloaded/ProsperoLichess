@@ -1,0 +1,27 @@
+# Values the settings, Watch and Lichess TV screens put into their text and
+# do not translate, for "tools/strings.py unmarked": one regular expression a
+# line. What a line matches is taken out of a text before the text is checked.
+# A name may stand at the end of a text of the test language, which adds
+# letters there: the lines end in (?![A-Za-z]) instead of \b.
+
+# A player of the PC pictures' TV game.
+silentrook
+# The piece sets that are called by their names (the first one's is a word).
+\b(?:Merida|Chessnut)(?![A-Za-z])
+# The frame counter as the picture of the display settings shows it.
+\b60 FPS\b
+# One small letter: a file of the board along its edge, a key of the
+# on-screen keyboard.
+^[a-z]$
+# The About page: where the source is, the file of notices, the app's licence.
+github\.com/\S+
+THIRD_PARTY_NOTICES\.md
+GPL-3\.0-or-later
+# ... the people and works its patterns name (before the projects: the longer
+# names hold the shorter ones) ...
+\b(?:Rasmus Andersson|The Montserrat Project Authors|Sean Barrett|YaoYuan)(?![A-Za-z])
+\b(?:Daniel Stenberg|Project Nayuki|OpenSSL Project|ElevenLabs)(?![A-Za-z])
+\b(?:cburnett|merida|chessnut|OpenGL 4\.6|Mesa|Bitstream)(?![A-Za-z])
+# ... and the projects it credits (the keys of its rows).
+\b(?:ps5-opengl|ps5-homebrew-ui|DejaVu Sans Mono|DejaVu|Inter|Montserrat)(?![A-Za-z])
+\b(?:stb_vorbis|yyjson|OpenSSL|libcurl|zlib|zstd|libpsl)(?![A-Za-z])

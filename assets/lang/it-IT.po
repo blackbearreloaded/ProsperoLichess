@@ -1,0 +1,3677 @@
+# ProsperoLichess - it-IT
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# English text is the key (msgid); msgstr is the translation. Keep {0} {1} as they are,
+# keep UPPERCASE labels uppercase, and keep names (ProsperoLichess, Lichess, Stockfish,
+# PS5, Chess960, lichess.org, homebrew.page) unchanged.
+
+#. Under a notification: {0} more of them are waiting ("+2 more").
+#: ui/components/notification.hpp
+msgid "+{0} more"
+msgstr "+{0} in attesa"
+
+#. Seconds added to the clock; {0} is the number, s stands for seconds ("+3 s"). Keep it short: about 6 letters.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "+{0} s"
+msgstr "+{0} s"
+
+#. What the combo wins next: {0} seconds are added to the clock when the combo reaches {1} puzzles ("+3 s at 5").
+#: modes/puzzle_scene.cpp
+msgid "+{0} s at {1}"
+msgstr "+{0} s a quota {1}"
+
+#. On a time control's tile: the seconds added to the clock after each move ("s" is seconds). About 16 characters.
+#: modes/play_setup.cpp
+msgid "+{0} s per move"
+msgstr "+{0} s a mossa"
+
+#. What stands between the thousands of a count (42,318): a comma, a point or a no-break space. One character.
+#: core/strings.cpp
+msgctxt "thousands separator"
+msgid ","
+msgstr "."
+
+#. Under the label "Skip": the run's one skip has not been used yet.
+#: modes/puzzle_scene.cpp
+msgid "1 left"
+msgstr "1 rimasto"
+
+#. Under the channel Classical: how long a player has. About 25 letters.
+#: modes/tv_feed.cpp
+msgid "25 minutes and more"
+msgstr "25 minuti o più"
+
+#. Under the channel Blitz: how long a player has. About 25 letters.
+#: modes/tv_feed.cpp
+msgid "3 to 8 minutes"
+msgstr "Da 3 a 8 minuti"
+
+#. Under the channel Rapid: how long a player has. About 25 letters.
+#: modes/tv_feed.cpp
+msgid "8 to 25 minutes"
+msgstr "Da 8 a 25 minuti"
+
+#. Over the button Resume game. One line of about 60 letters.
+#: modes/play_page.cpp
+msgid "A game is in progress. Its menu starts a new one."
+msgstr "Partita in corso. Dal suo menu ne inizi una nuova."
+
+#. A small label over "–10 s": what a mistake costs in Puzzle Storm.
+#: modes/puzzles_page.cpp
+msgid "A mistake"
+msgstr "Un errore"
+
+#: modes/settings_page.cpp
+msgid "A new resolution applies at once: the display restarts with the size you chose."
+msgstr "La nuova risoluzione si applica subito: lo schermo si riavvia con la dimensione scelta."
+
+#. After the speed and a dot, in lower case: "Rapid · a random side".
+#: modes/play_page.cpp
+msgid "a random side"
+msgstr "colore casuale"
+
+#. Under the step Create. About 30 letters.
+#: modes/account_scene.cpp
+msgid "A token at lichess.org"
+msgstr "Un token su lichess.org"
+
+#. Error under the token field; {0} is 8.
+#: modes/account_scene.cpp
+msgid "A token has at least {0} characters"
+msgstr "Un token ha almeno {0} caratteri"
+
+#. The plate beside the actions when one press is enough, before both sides have moved: call the game off (it is not scored). A verb.
+#: modes/game_scene.cpp
+msgid "Abort"
+msgstr "Interrompi"
+
+#. Row of the game menu, before both sides have moved: call the game off (it is not scored).
+#: modes/game_scene.cpp
+msgid "Abort game"
+msgstr "Interrompi la partita"
+
+#. Settings: the group that says what the app is and whose work it uses. About 14 letters.
+#: modes/settings_page.cpp
+msgid "About"
+msgstr "Informazioni"
+
+#: modes/update_scene.cpp
+msgid "About {0} min left"
+msgstr "Circa {0} min rimanenti"
+
+#: modes/update_scene.cpp
+msgid "About {0} s left"
+msgstr "Circa {0} s rimanenti"
+
+#. Answer to a draw offer or a takeback request: agree. About 16 letters.
+#: modes/game_scene.cpp
+msgid "Accept"
+msgstr "Accetta"
+
+#. Under the title of the card with the opponent's draw offer. One line, about 55 letters.
+#: modes/game_scene.cpp
+msgid "Accept and the game ends in a draw."
+msgstr "Se accetti, la partita finisce patta."
+
+#. Under the title of the card with the opponent's takeback request. One line, about 55 letters.
+#: modes/game_scene.cpp
+msgid "Accept and their last move is taken back."
+msgstr "Se accetti, la sua ultima mossa viene ritirata."
+
+#. Button hint: go to the row of action plates under the moves. About 10 letters.
+#: modes/game_scene.cpp
+msgid "Actions"
+msgstr "Azioni"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Advanced pawn"
+msgstr "Pedone avanzato"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles that win a decisive advantage.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Advantage"
+msgstr "Vantaggio"
+
+#. Which position is on the board while stepping through the moves. {0} is a move with its number: "12. Nxd4", "12… Nf6".
+#: modes/game_scene.cpp
+msgid "After {0}"
+msgstr "Dopo {0}"
+
+#. A small label in capitals over a number such as "+159": today's puzzle's rating minus the player's. About 21 letters (27 are shrunk to fit).
+#: modes/puzzles_page.cpp
+msgid "Against your rating"
+msgstr "Rispetto al tuo punteggio"
+
+#. About: the heading over the credits.
+#: modes/settings_page.cpp
+msgid "Also thanks to"
+msgstr "Grazie anche a"
+
+#. Settings: a pawn that reaches the last rank becomes a queen without asking.
+#: modes/settings_page.cpp
+msgid "Always promote to queen"
+msgstr "Promuovi sempre a Donna"
+
+#. On the opening title: the app is not made by Lichess.
+#: modes/boot_scene.cpp
+msgid "An unofficial client"
+msgstr "Un client non ufficiale"
+
+#: modes/settings_page.cpp
+msgid "An unofficial PS5 homebrew Lichess client."
+msgstr "Un client Lichess homebrew non ufficiale per PS5."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Anastasia's mate"
+msgstr "Matto di Anastasia"
+
+#. Stands for the name of a player on Lichess TV who has no account name.
+#: lichess/session.cpp
+msgid "Anonymous"
+msgstr "Anonimo"
+
+#. Settings, Board: the heading over the board and the piece set.
+#: modes/settings_page.cpp
+msgid "Appearance"
+msgstr "Aspetto"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Arabian mate"
+msgstr "Matto arabo"
+
+#: modes/settings_page.cpp
+msgid "Ask before resigning an online game."
+msgstr "Chiedi conferma prima di abbandonare una partita online."
+
+#. Under the step Authorize. About 30 letters.
+#: modes/account_scene.cpp
+msgid "At lichess.org"
+msgstr "Su lichess.org"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. f2 and f7 are squares: keep them as they are.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Attacking f2 or f7"
+msgstr "Attacco su f2 o f7"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Attraction"
+msgstr "Adescamento"
+
+#. Second step of signing in with a phone. Lichess has a button with this name: use the word lichess.org uses for it. About 16 letters.
+#: modes/account_scene.cpp
+msgctxt "step"
+msgid "Authorize"
+msgstr "Autorizza"
+
+#. Row of the game menu (Pass & Play), a switch: the board turns to the player whose move it is.
+#: modes/game_scene.cpp
+msgid "Auto-flip"
+msgstr "Rotazione automatica"
+
+#. Watch: a label over the average of the two players' ratings. Small capitals; about 18 letters.
+#: modes/watch_page.cpp
+msgid "Average rating"
+msgstr "Punteggio medio"
+
+#. Button hint: go back one screen. Also the word under the button that goes back, in the controller settings: about 12 letters.
+#: modes/account_scene.cpp, modes/game_scene.cpp, modes/play_page.cpp, modes/puzzle_scene.cpp, modes/settings_page.cpp, modes/start_game_scene.cpp, modes/tv_scene.cpp, modes/update_scene.cpp, modes/watch_page.cpp
+msgid "Back"
+msgstr "Indietro"
+
+#. Under the step Done. About 30 letters.
+#: modes/account_scene.cpp
+msgid "Back on the console"
+msgstr "Di nuovo sulla console"
+
+#. Notice: the connection to Lichess is back.
+#: lichess/session.cpp
+msgid "Back online"
+msgstr "Di nuovo online"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Back rank mate"
+msgstr "Matto del corridoio"
+
+#. Button hint, while an earlier position shows: return to the current one. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Back to game"
+msgstr "Torna alla partita"
+
+#. A button when a run is over: return to the Puzzles page. About 20 letters.
+#: modes/puzzle_scene.cpp
+msgid "Back to puzzles"
+msgstr "Torna ai problemi"
+
+#: modes/settings_page.cpp
+msgid "Background music."
+msgstr "Musica di sottofondo."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Balestra mate"
+msgstr "Matto della balestra"
+
+#. A small label over the player's best result so far (a record). At most 10 letters.
+#: modes/puzzle_scene.cpp
+msgid "Best"
+msgstr "Record"
+
+#. Under the channel "Top rated". About 25 letters.
+#: modes/tv_feed.cpp
+msgid "Best game right now"
+msgstr "La migliore del momento"
+
+#. The state of the puzzle after a right move that does not end it yet.
+#: modes/puzzle_scene.cpp
+msgid "Best move. Keep going"
+msgstr "La mossa migliore. Continua così"
+
+#. A small label over the player's best Puzzle Storm score. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "Best score"
+msgstr "Punteggio record"
+
+#. Label over a number: the best score in Puzzle Storm. About 16 letters.
+#: modes/home_page.cpp
+msgid "Best storm"
+msgstr "Record Storm"
+
+#. A small label over the player's longest Puzzle Streak run. About 19 letters.
+#: modes/home_page.cpp, modes/puzzles_page.cpp
+msgid "Best streak"
+msgstr "Record Streak"
+
+#. Under a run's result: {0} is the player's best result so far ("Best 27").
+#: modes/home_page.cpp, modes/puzzle_scene.cpp
+msgid "Best {0}"
+msgstr "Record: {0}"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Bishop endgame"
+msgstr "Finale d'alfiere"
+
+#. The side with the black pieces: under a player's name, and beside "Last move" for who played it.
+#: modes/play_page.cpp, modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Black"
+msgstr "Nero"
+
+#. The side that has the black pieces: the name of a Pass & Play player, the head of the column of Black's moves, and the {0} of a player's note ("Black · thinking").
+#: modes/game_scene.cpp, modes/game_widgets.cpp
+msgctxt "side"
+msgid "Black"
+msgstr "Nero"
+
+#. The side to move in today's puzzle, under the label "To play".
+#: modes/puzzles_page.cpp
+msgctxt "to play"
+msgid "Black"
+msgstr "Nero"
+
+#. Pass & Play, state line: Black's king is in check.
+#: modes/game_scene.cpp
+msgid "Black is in check"
+msgstr "Il Nero è sotto scacco"
+
+#. Result card, how the game ended.
+#: modes/game_scene.cpp
+msgid "Black resigned"
+msgstr "Il Nero ha abbandonato"
+
+#. It is Black's move. On the puzzle screen a short line at the top of a Puzzle Streak or Puzzle Storm run: at most 20 letters.
+#: modes/game_scene.cpp, modes/puzzle_scene.cpp
+msgid "Black to move"
+msgstr "Tocca al Nero"
+
+#. The large heading of a puzzle: it is Black's move. About 19 letters (24 are shrunk to fit).
+#: modes/home_page.cpp, modes/puzzle_scene.cpp
+msgid "Black to play"
+msgstr "Muove il Nero"
+
+#. Pass & Play, the large title of the result card and the state line.
+#: modes/game_scene.cpp
+msgid "Black wins"
+msgstr "Vince il Nero"
+
+#. Under the material bar: {0} is what Black's pieces are worth, in pawns ("Black 38").
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Black {0}"
+msgstr "Nero {0}"
+
+#. Lichess TV, under a player's name: this player has the black pieces and it is their turn.
+#: modes/tv_scene.cpp
+msgid "Black · to move"
+msgstr "Nero · ha la mossa"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Blind swine mate"
+msgstr "Matto del maiale cieco"
+
+#. A Lichess TV channel and a speed of play: use lichess.org's word. About 14 letters.
+#: lichess/board_link.cpp, lichess/session.cpp, modes/game_scene.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp, modes/tv_feed.cpp
+msgid "Blitz"
+msgstr "Blitz"
+
+#. Settings: the group about how the board looks, and the row that chooses the board. About 14 letters.
+#: modes/game_scene.cpp, modes/settings_page.cpp
+msgid "Board"
+msgstr "Scacchiera"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Boden's mate"
+msgstr "Matto di Boden"
+
+#. About: before the author's name.
+#: modes/settings_page.cpp
+msgid "Brought to you by"
+msgstr "Realizzato da"
+
+#. A Lichess TV channel and a speed of play: use lichess.org's word. About 14 letters.
+#: lichess/board_link.cpp, lichess/session.cpp, modes/game_scene.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp, modes/tv_feed.cpp
+msgid "Bullet"
+msgstr "Bullet"
+
+#. Settings, Controller: the heading over the buttons' roles, and the title of the picture beside.
+#: modes/settings_page.cpp
+msgid "Buttons"
+msgstr "Tasti"
+
+#. Button hint: put the piece back, or stop waiting for a game. About 10 letters.
+#: modes/game_scene.cpp, modes/start_game_scene.cpp
+msgid "Cancel"
+msgstr "Annulla"
+
+#. Watch: a label over the pieces each side has taken. Small capitals.
+#: modes/watch_page.cpp
+msgid "Captured"
+msgstr "Catturati"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Capture the defender".
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Capturing defender"
+msgstr "Cattura del difensore"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Castling"
+msgstr "Arrocco"
+
+#. The game does not count for the rating: the opposite of Rated. About 12 letters.
+#: lichess/board_link.cpp, modes/play_page.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp
+msgid "Casual"
+msgstr "Amichevole"
+
+#. Button hint (a verb): change the highlighted setting's value.
+#: modes/settings_page.cpp
+msgid "Change"
+msgstr "Cambia"
+
+#. Settings: under the list of groups. Three short lines at most.
+#: modes/settings_page.cpp
+msgid "Changes apply at once and are saved for this console."
+msgstr "Modifiche applicate subito e salvate su questa console."
+
+#. Button hint: move to another Lichess TV channel.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Channel"
+msgstr "Canale"
+
+#. Result card, how the game ended: Lichess found that a player cheated.
+#: modes/game_scene.cpp
+msgid "Cheat detected"
+msgstr "Cheat rilevato"
+
+#. On the opening title, while Lichess has not answered yet.
+#: modes/boot_scene.cpp
+msgid "Checking the connection"
+msgstr "Verifica della connessione"
+
+#. While waiting; no full stop at the end.
+#: modes/account_scene.cpp
+msgid "Checking the token with Lichess"
+msgstr "Verifica del token con Lichess"
+
+#: modes/play_page.cpp
+msgid "Checking your Lichess account."
+msgstr "Verifica del tuo account Lichess."
+
+#. Result card, how the game ended.
+#: modes/game_scene.cpp
+msgid "Checkmate"
+msgstr "Scacco matto"
+
+#. The line under the app's name on the opening title.
+#: modes/boot_scene.cpp
+msgid "Chess on lichess.org, native on PS5"
+msgstr "Scacchi su lichess.org, nativi su PS5"
+
+#. Button hint: move between the items.
+#: modes/game_scene.cpp, modes/play_page.cpp, modes/puzzle_scene.cpp, modes/puzzles_page.cpp, modes/settings_page.cpp, modes/shell_scene.cpp
+msgid "Choose"
+msgstr "Scegli"
+
+#. Cross and Circle are the PS5 controller's buttons.
+#: modes/settings_page.cpp
+msgid "Circle confirms and Cross goes back."
+msgstr "Cerchio conferma e Croce torna indietro."
+
+#. Row of the game menu: the opponent left, take the win.
+#: modes/game_scene.cpp
+msgid "Claim victory"
+msgstr "Reclama la vittoria"
+
+#. A board's name: flat brown squares.
+#: board/board_view.hpp
+msgid "Classic"
+msgstr "Classica"
+
+#. A piece set's name: the usual pieces of lichess.org. The other sets (Merida, Chessnut) keep their names.
+#: modes/settings_page.cpp
+msgctxt "piece set"
+msgid "Classic"
+msgstr "Classici"
+
+#. A Lichess TV channel and a speed of play: use lichess.org's word. About 14 letters.
+#: lichess/board_link.cpp, lichess/session.cpp, modes/game_scene.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp, modes/tv_feed.cpp
+msgid "Classical"
+msgstr "Classical"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Clearance"
+msgstr "Sgombero"
+
+#. A small label over "3:00": the time a Puzzle Storm run has.
+#: modes/puzzles_page.cpp
+msgid "Clock"
+msgstr "Tempo"
+
+#: modes/update_scene.cpp
+msgid "Close"
+msgstr "Chiudi"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Collinear move"
+msgstr "Mossa collineare"
+
+#. A small label beside the number of puzzles solved in a row in Puzzle Storm.
+#: modes/puzzle_scene.cpp
+msgid "Combo"
+msgstr "Combo"
+
+#: lichess/puzzle_sources.cpp
+msgid "Come back tomorrow for a new daily puzzle"
+msgstr "Torna domani per un nuovo problema del giorno"
+
+#. Credits: {0} is "libcurl". Keep the licences' names in brackets.
+#: modes/settings_page.cpp
+msgid "Compression and domain rules for {0} (zlib, BSD, MIT)"
+msgstr "Compressione e regole dei domini per {0} (zlib, BSD, MIT)"
+
+#. Tab of the Play page: games against Stockfish. About 20 letters.
+#: modes/play_page.cpp
+msgid "Computer"
+msgstr "Computer"
+
+#. Settings, Controller: the word under the button that confirms, in small capitals on a tag. About 12 letters.
+#: modes/settings_page.cpp
+msgid "Confirm"
+msgstr "Conferma"
+
+#: modes/settings_page.cpp
+msgid "Confirm resignation"
+msgstr "Conferma abbandono"
+
+#. On the opening title, once Lichess has answered.
+#: modes/boot_scene.cpp
+msgid "Connected to lichess.org"
+msgstr "Connesso a lichess.org"
+
+#. On the empty board while an online game is being loaded.
+#: modes/game_scene.cpp
+msgid "Connecting to the game"
+msgstr "Connessione alla partita"
+
+#. Notice, one line: keep it as short as the English.
+#: lichess/session.cpp
+msgid "Connection lost. Online modes will return when it is back."
+msgstr "Connessione persa. Le modalità online torneranno con la rete."
+
+#. Why a move or a request did not reach Lichess.
+#: lichess/board_link.cpp
+msgid "Connection problem"
+msgstr "Problema di connessione"
+
+#. Notice: one request failed and is sent again.
+#: lichess/session.cpp
+msgid "Connection problem. Retrying…"
+msgstr "Problema di connessione. Nuovo tentativo…"
+
+#. Notice while the account's live connection is being restored.
+#: lichess/session.cpp
+msgid "Connection to Lichess lost. Reconnecting…"
+msgstr "Connessione a Lichess persa. Riconnessione…"
+
+#. Notice at the top of the screen during an online game.
+#: lichess/board_link.cpp
+msgid "Connection to the game lost. Reconnecting…"
+msgstr "Connessione alla partita persa. Riconnessione…"
+
+#. State in the top strip: a request to Lichess failed. Short.
+#: app/chrome.cpp
+msgid "Connection trouble"
+msgstr "Problemi di rete"
+
+#. Small heading over the console's network address. In capitals on screen.
+#: modes/account_scene.cpp
+msgid "Console address"
+msgstr "Indirizzo della console"
+
+#. Button hint and label: close the screen that says signing in worked.
+#: modes/account_scene.cpp
+msgid "Continue"
+msgstr "Continua"
+
+#. Small heading over the row of cards on the home page: games and modes to go on with.
+#: modes/home_page.cpp
+msgctxt "heading"
+msgid "Continue"
+msgstr "Continua"
+
+#. Settings: the group about the controller's buttons and its vibration. About 14 letters.
+#: modes/settings_page.cpp
+msgid "Controller"
+msgstr "Controller"
+
+#. Small heading over the figure 1: one controller is enough. About 12 letters.
+#: modes/play_page.cpp
+msgid "Controllers"
+msgstr "Controller"
+
+#. Settings: the letters and numbers along the board's edge (a to h, 1 to 8).
+#: modes/settings_page.cpp
+msgid "Coordinates"
+msgstr "Coordinate"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Corner mate"
+msgstr "Matto nell'angolo"
+
+#. Name of a Lichess speed, as lichess.org calls it. On tiles in capitals: about 15 letters.
+#: lichess/board_link.cpp, lichess/session.cpp, modes/game_scene.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp
+msgid "Correspondence"
+msgstr "Corrispondenza"
+
+#. Short message: the moves Lichess sent could not be played on the board.
+#: modes/game_scene.cpp
+msgid "Could not follow the game's moves"
+msgstr "Impossibile seguire le mosse della partita"
+
+#. Title of the panel that says why a game cannot be shown.
+#: modes/game_scene.cpp
+msgid "Could not open the game"
+msgstr "Impossibile aprire la partita"
+
+#: modes/account_scene.cpp
+msgid "Could not reach Lichess. Check the connection and try again."
+msgstr "Impossibile raggiungere Lichess. Controlla la connessione e riprova."
+
+#. Title of the panel that says why no game began.
+#: modes/start_game_scene.cpp
+msgid "Could not start the game"
+msgstr "Impossibile avviare la partita"
+
+#. First step of signing in with a token: create one. About 16 letters.
+#: modes/account_scene.cpp
+msgctxt "step"
+msgid "Create"
+msgstr "Crea"
+
+#. Heading under a QR code that leads to lichess.org. About 20 letters.
+#: modes/account_scene.cpp
+msgid "Create a token"
+msgstr "Crea un token"
+
+#. Credits: {0} is "ElevenLabs", the service the sounds were made with.
+#: modes/settings_page.cpp
+msgid "Created with {0}"
+msgstr "Creati con {0}"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles that win a crushing advantage after a blunder.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Crushing"
+msgstr "Posizione schiacciante"
+
+#. A way to play puzzles, as lichess.org names it. A tile's title (about 17 letters; up to 22 are shrunk to fit) and a large heading.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Daily Puzzle"
+msgstr "Problema del giorno"
+
+#. Small heading over the puzzle of the day.
+#: modes/home_page.cpp
+msgid "Daily puzzle"
+msgstr "Problema del giorno"
+
+#. Answer to a draw offer or a takeback request, and the button hint for it: refuse. About 16 letters.
+#: modes/game_scene.cpp
+msgid "Decline"
+msgstr "Rifiuta"
+
+#. Result card, the large title: the player lost. One or two words.
+#: modes/game_scene.cpp
+msgid "Defeat"
+msgstr "Sconfitta"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Defensive move"
+msgstr "Mossa difensiva"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Deflection"
+msgstr "Deviazione"
+
+#. Button hint on the token keyboard: delete the last character.
+#: modes/account_scene.cpp
+msgid "Delete"
+msgstr "Cancella"
+
+#. Button hint for L2 and R2: make the puzzles easier or harder.
+#: modes/puzzles_page.cpp
+msgid "Difficulty"
+msgstr "Difficoltà"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Discovered attack"
+msgstr "Attacco di scoperta"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Discovered check"
+msgstr "Scacco di scoperta"
+
+#. Settings: the group about the picture (a noun: the screen). About 14 letters.
+#: modes/settings_page.cpp
+msgid "Display"
+msgstr "Schermo"
+
+#. On-screen keyboard: the key that ends typing. About 8 letters.
+#: modes/account_scene.cpp, ui/components/keyboard.hpp
+msgid "Done"
+msgstr "Fine"
+
+#. Last step of signing in: it is finished. About 16 letters.
+#: modes/account_scene.cpp
+msgctxt "step"
+msgid "Done"
+msgstr "Fatto"
+
+#: modes/settings_page.cpp
+msgid "Dots on the squares the selected piece can reach."
+msgstr "Punti sulle caselle che il pezzo selezionato può raggiungere."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Double bishop mate"
+msgstr "Matto dei due alfieri"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Double check"
+msgstr "Doppio scacco"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Dovetail mate"
+msgstr "Matto a coda di rondine"
+
+#: modes/update_scene.cpp
+msgid "Download size: {0}"
+msgstr "Dimensione del download: {0}"
+
+#. Beside or under a player's name once the game is over: this player drew. One short word (about 10 letters), in the form of "Won" and "Lost".
+#: modes/game_scene.cpp
+msgctxt "player"
+msgid "Draw"
+msgstr "Patta"
+
+#. The game's result, as the large title of the result card and in the state line: nobody won. One or two words.
+#: modes/game_scene.cpp
+msgctxt "result"
+msgid "Draw"
+msgstr "Patta"
+
+#. Result card, how the game ended.
+#: modes/game_scene.cpp
+msgid "Draw agreed or claimed"
+msgstr "Patta concordata o reclamata"
+
+#. Short message after the player offered a draw.
+#: modes/game_scene.cpp
+msgid "Draw offer sent"
+msgstr "Offerta di patta inviata"
+
+#. Action plate, in place of "Offer draw" while the player's draw offer waits for an answer. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Draw offered"
+msgstr "Patta offerta"
+
+#. A small label over "+60": how much harder (in rating) the next puzzle is after each solved one.
+#: modes/puzzles_page.cpp
+msgid "Each solve"
+msgstr "A ogni soluzione"
+
+#. How hard the puzzles are, as on lichess.org (Easier, Normal, Harder, Hardest). One of four segments side by side: 8 letters fit, 11 are shrunk to fit.
+#: modes/puzzle_scene.hpp
+msgctxt "difficulty"
+msgid "Easier"
+msgstr "Facile"
+
+#. Under the difference of ratings: today's puzzle is rated lower than the player. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "Easier than your puzzle rating"
+msgstr "Più facile del tuo punteggio"
+
+#. Under "No puzzle to show": the puzzle Lichess sent has no solution.
+#: puzzles/puzzle.cpp
+msgid "empty solution"
+msgstr "soluzione vuota"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "En passant"
+msgstr "En passant"
+
+#. End the Puzzle Streak or Puzzle Storm run now: a shortcut button and a row of the pause menu. About 18 letters.
+#: modes/puzzle_scene.cpp
+msgid "End run"
+msgstr "Termina tentativo"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles from the last phase of a game.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Endgame"
+msgstr "Finale"
+
+#. What Puzzle Training is, in two lines (three smaller ones at most: about 200 letters).
+#: modes/puzzles_page.cpp
+msgid "Endless puzzles picked for your level. Signed in, every result counts towards your Lichess puzzle rating."
+msgstr "Problemi senza fine, scelti per il tuo livello. Dopo l'accesso, ogni risultato conta per il tuo punteggio problemi su Lichess."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Epaulette mate"
+msgstr "Matto di controspallina"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles that save a draw or an equal position.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Equality"
+msgstr "Parità"
+
+#. Under the label "Rating": the player's puzzle rating is no longer provisional.
+#: modes/puzzles_page.cpp
+msgid "Established"
+msgstr "Definitivo"
+
+#. Beside Material: both sides' pieces are worth the same. About 10 letters.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Even"
+msgstr "Pari"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Exposed king"
+msgstr "Re esposto"
+
+#. Settings, Controller: the heading over what the controller lets the player feel (vibration). Not an opinion sent to someone.
+#: modes/settings_page.cpp
+msgid "Feedback"
+msgstr "Feedback tattile"
+
+#. While the account is being checked. No full stop.
+#: modes/profile_page.cpp
+msgid "Fetching your account from Lichess"
+msgstr "Recupero del tuo account da Lichess"
+
+#. Result card, how the game ended: fifty moves without a capture or a pawn move (a draw).
+#: modes/game_scene.cpp
+msgid "Fifty-move rule"
+msgstr "Regola delle 50 mosse"
+
+#: modes/settings_page.cpp
+msgid "Files and ranks along the board's edge."
+msgstr "Colonne e traverse lungo il bordo della scacchiera."
+
+#. Button and button hint: ask Lichess for an opponent. About 18 letters.
+#: modes/play_page.cpp
+msgid "Find opponent"
+msgstr "Trova avversario"
+
+#. Under the heading "Black to play". At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "Find the best move for Black"
+msgstr "Trova la mossa migliore per il Nero"
+
+#. Under the heading "White to play". At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "Find the best move for White"
+msgstr "Trova la mossa migliore per il Bianco"
+
+#. Waiting screen, what is happening. About 22 letters.
+#: modes/start_game_scene.cpp
+msgid "Finding an opponent"
+msgstr "Ricerca avversario"
+
+#. "Pass & Play" is the game for two players on this console: word it as in its own entry.
+#: modes/play_page.cpp
+msgid "Finding an opponent needs the internet connection. Pass & Play works without it."
+msgstr "Per trovare un avversario serve la connessione a Internet. Passa e gioca funziona anche senza."
+
+#. Button hint: turn the board to see it from the other side.
+#: modes/game_scene.cpp, modes/puzzle_scene.cpp, modes/tv_scene.cpp
+msgid "Flip board"
+msgstr "Ruota scacchiera"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Fork"
+msgstr "Attacco doppio"
+
+#: modes/settings_page.cpp
+msgid "Frames per second in the top-right corner."
+msgstr "Fotogrammi al secondo nell'angolo in alto a destra."
+
+#. Tab of the Play page: two players on this console. About 20 letters.
+#: modes/play_page.cpp
+msgid "Friend"
+msgstr "Amico"
+
+#. Under the computer's level. One line of about 45 letters.
+#: modes/play_page.cpp
+msgid "From 1, the gentlest, to 8, the strongest"
+msgstr "Da 1, il più facile, a 8, il più forte"
+
+#. Result card, the large title: the game was called off before it began.
+#: modes/game_scene.cpp
+msgid "Game aborted"
+msgstr "Partita interrotta"
+
+#. Small label in capitals over the menu that the Options button opens during a game.
+#: modes/game_scene.cpp
+msgid "Game menu"
+msgstr "Menu partita"
+
+#. On the plate where resigning was, once the game has ended. About 18 letters.
+#: modes/game_scene.cpp
+msgid "Game over"
+msgstr "Partita terminata"
+
+#. Settings: the volume of moves, captures and results. Also a meter's name in the picture beside: about 20 letters.
+#: modes/settings_page.cpp
+msgid "Game sounds"
+msgstr "Suoni di gioco"
+
+#: modes/play_page.cpp
+msgid "Games are played with your Lichess account. Sign in once with your phone or with a personal token."
+msgstr "Le partite si giocano con il tuo account Lichess. Accedi una volta con il telefono o con un token personale."
+
+#. Heading over the player's unfinished games, and the title of a tile. About 24 letters.
+#: modes/profile_page.cpp
+msgid "Games in progress"
+msgstr "Partite in corso"
+
+#. Small heading over a number of games. In capitals on screen: about 14 letters.
+#: modes/profile_page.cpp
+msgid "Games played"
+msgstr "Partite"
+
+#. Small heading of the menu's card when nobody is signed in: the player is a guest.
+#: modes/shell_scene.cpp
+msgid "Guest"
+msgstr "Ospite"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Hanging piece"
+msgstr "Pezzo in presa"
+
+#. How hard the puzzles are, as on lichess.org (Easier, Normal, Harder, Hardest). One of four segments side by side: 8 letters fit, 11 are shrunk to fit.
+#: modes/puzzle_scene.hpp
+msgctxt "difficulty"
+msgid "Harder"
+msgstr "Difficile"
+
+#. Under the difference of ratings: today's puzzle is rated higher than the player. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "Harder than your puzzle rating"
+msgstr "Più difficile del tuo punteggio"
+
+#. How hard the puzzles are, as on lichess.org (Easier, Normal, Harder, Hardest). One of four segments side by side: 8 letters fit, 11 are shrunk to fit.
+#: modes/puzzle_scene.hpp
+msgctxt "difficulty"
+msgid "Hardest"
+msgstr "Estremo"
+
+#. Under the label "Rating" while a puzzle is being solved: its rating is shown once it is over. At most 10 letters.
+#: modes/puzzle_scene.cpp
+msgid "Hidden"
+msgstr "Nascosto"
+
+#. A shortcut button: ask for a hint. Keep it short (about 12 letters).
+#: modes/puzzle_scene.cpp
+msgid "Hint"
+msgstr "Suggerimento"
+
+#. The state of the puzzle after the second hint: an arrow on the board shows the move. At most 38 letters.
+#: modes/puzzle_scene.cpp
+msgid "Hint: follow the arrow"
+msgstr "Suggerimento: segui la freccia"
+
+#. The state of the puzzle after the first hint: the piece to move is marked. At most 38 letters.
+#: modes/puzzle_scene.cpp
+msgid "Hint: move the marked piece"
+msgstr "Suggerimento: muovi il pezzo indicato"
+
+#. Button hint for L2 and R2: look at the earlier moves of the game. About 10 letters.
+#: modes/game_scene.cpp
+msgid "History"
+msgstr "Cronologia"
+
+#. The plate beside the actions, before both sides have moved: hold the Square button to call the game off (it is not scored). About 18 letters.
+#: modes/game_scene.cpp
+msgid "Hold to abort"
+msgstr "Tieni premuto per interrompere"
+
+#. The plate beside the actions: hold the Square button to give the game up. About 18 letters.
+#: modes/game_scene.cpp
+msgid "Hold to resign"
+msgstr "Tieni premuto per abbandonare"
+
+#. Button hint, and what the Sign out button says after a short press: it must be held down. About 20 letters.
+#: modes/profile_page.cpp
+msgid "Hold to sign out"
+msgstr "Tieni premuto per uscire"
+
+#. Entry of the left menu and the page's name in the top strip. Menu entries must stay short: about 12 letters.
+#: modes/home_page.cpp, modes/shell_scene.cpp
+msgid "Home"
+msgstr "Home"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Hook mate"
+msgstr "Matto dell'uncino"
+
+#: modes/settings_page.cpp
+msgid "How moves are made and what is asked before they count."
+msgstr "Come si fanno le mosse e cosa viene chiesto prima che contino."
+
+#: modes/settings_page.cpp
+msgid "How the board and the pieces look, here and in every game."
+msgstr "L'aspetto della scacchiera e dei pezzi, qui e in ogni partita."
+
+#. Credits: {0} is a person's name. HTTPS and curl stay.
+#: modes/settings_page.cpp
+msgid "HTTPS by {0} and contributors (curl)"
+msgstr "HTTPS di {0} e collaboratori (curl)"
+
+#. Under "No puzzle to show": the solution Lichess sent holds a move that cannot be played; {0} is that move ("e2e4").
+#: puzzles/puzzle.cpp
+msgid "illegal solution move {0}"
+msgstr "mossa non valida nella soluzione: {0}"
+
+#. A small label with the number of puzzles solved in a row in Puzzle Streak (over the number, and under it inside a ring: 8 letters fit there, 10 are shrunk to fit).
+#: modes/puzzle_scene.cpp
+msgid "In a row"
+msgstr "Di fila"
+
+#. Pass & Play, under a player's name: this player's king is in check.
+#: modes/game_scene.cpp
+msgid "In check"
+msgstr "Sotto scacco"
+
+#. Result card, how the game ended: neither side has the pieces to give mate (a draw).
+#: modes/game_scene.cpp
+msgid "Insufficient material"
+msgstr "Materiale insufficiente"
+
+#. Settings, Sound: the name of the meter of the menus' sounds, in small capitals. About 20 letters.
+#: modes/settings_page.cpp
+msgid "Interface"
+msgstr "Interfaccia"
+
+#. Settings: the volume of the menus' sounds.
+#: modes/settings_page.cpp
+msgid "Interface sounds"
+msgstr "Suoni dell'interfaccia"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Interference"
+msgstr "Interposizione"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Also called Zwischenzug.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Intermezzo"
+msgstr "Intermezzo"
+
+#. Small heading over "Not needed". About 12 letters.
+#: modes/play_page.cpp
+msgid "Internet"
+msgstr "Internet"
+
+#. In the place of the chart of the player's puzzle rating ("its": the rating's). At most 60 letters.
+#: modes/puzzles_page.cpp
+msgid "Its line shows here once your results are known"
+msgstr "Il grafico appare qui quando i tuoi risultati sono noti"
+
+#. In the place of the chart of the player's puzzle rating ("its": the rating's). At most 60 letters.
+#: modes/puzzles_page.cpp
+msgid "Its line shows here when you are signed in"
+msgstr "Il grafico appare qui dopo l'accesso"
+
+#. In a run, in the place of the last puzzle's themes ("its": the puzzle's).
+#: modes/puzzle_scene.cpp
+msgid "Its themes show here once it is over"
+msgstr "I suoi temi appaiono qui quando è finito"
+
+#. Credits: {0} is a person's name. JSON and MIT stay.
+#: modes/settings_page.cpp
+msgid "JSON parsing by {0} (MIT)"
+msgstr "Analisi JSON di {0} (MIT)"
+
+#. On the resign plate, for a moment after the Square button was only tapped. About 18 letters.
+#: modes/game_scene.cpp
+msgid "Keep holding"
+msgstr "Continua a premere"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Kill box mate"
+msgstr "Matto della scatola assassina"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Kingside attack"
+msgstr "Attacco sull'ala di re"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Knight endgame"
+msgstr "Finale di cavallo"
+
+#. Under an empty figure: the difference of ratings is known once today's puzzle has loaded.
+#: modes/puzzles_page.cpp
+msgid "Known once it is loaded"
+msgstr "Disponibile dopo il caricamento"
+
+#. A label over the last move played ("Nxd4"). Small capitals; about 14 letters.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Last move"
+msgstr "Ultima mossa"
+
+#. A small label over what is known about the puzzle before the one on the board.
+#: modes/puzzle_scene.cpp
+msgid "Last puzzle"
+msgstr "Ultimo problema"
+
+#. A small label under Puzzle Storm's clock: the time that is left (not the direction). At most 10 letters.
+#: modes/puzzle_scene.cpp
+msgctxt "time"
+msgid "Left"
+msgstr "Rimanente"
+
+#. Settings: dots on the squares the selected piece may move to.
+#: modes/settings_page.cpp
+msgid "Legal moves"
+msgstr "Mosse valide"
+
+#. A strength of the computer; {0} is 1 to 8.
+#: modes/play_page.cpp, modes/start_game_scene.cpp
+msgid "Level {0}"
+msgstr "Livello {0}"
+
+#. Result card, under the computer's name (Stockfish). {0} is its strength, 1 to 8. Lower case.
+#: modes/game_scene.cpp
+msgid "level {0}"
+msgstr "livello {0}"
+
+#. Settings, Sound: the title of the picture with the three volume meters.
+#: modes/settings_page.cpp
+msgid "Levels"
+msgstr "Livelli"
+
+#. About: before the name of the app's licence.
+#: modes/settings_page.cpp
+msgid "Licence"
+msgstr "Licenza"
+
+#. Heading. In capitals on screen. About 24 letters.
+#: modes/account_scene.cpp, modes/play_page.cpp, modes/profile_page.cpp
+msgid "Lichess account"
+msgstr "Account Lichess"
+
+#. Notice: Lichess limits how often the app may ask. {0} is a number of seconds; "s" is the unit.
+#: lichess/session.cpp
+msgid "Lichess asked us to slow down. Resuming in {0} s"
+msgstr "Lichess ci ha chiesto di rallentare. Si riprende tra {0} s"
+
+#. Why no game began: too many requests were sent.
+#: modes/start_game_scene.cpp
+msgid "Lichess asked us to slow down. Try again in a minute."
+msgstr "Lichess ci ha chiesto di rallentare. Riprova tra un minuto."
+
+#: modes/account_scene.cpp
+msgid "Lichess did not accept that token."
+msgstr "Lichess non ha accettato questo token."
+
+#. {0} is the number of the error Lichess answered with, such as 401.
+#: modes/account_scene.cpp
+msgid "Lichess did not accept the sign-in ({0})."
+msgstr "Lichess non ha accettato l'accesso ({0})."
+
+#: lichess/puzzle_sources.cpp
+msgid "Lichess did not answer"
+msgstr "Lichess non ha risposto"
+
+#. Why no game began.
+#: modes/start_game_scene.cpp
+msgid "Lichess did not create the game"
+msgstr "Lichess non ha creato la partita"
+
+#. {0} is the number of the error Lichess answered with, such as 400.
+#: modes/account_scene.cpp
+msgid "Lichess did not issue a token ({0})."
+msgstr "Lichess non ha rilasciato un token ({0})."
+
+#: lichess/puzzle_sources.cpp
+msgid "Lichess did not send puzzles"
+msgstr "Lichess non ha inviato problemi"
+
+#. Small label in capitals over "Could not open the game".
+#: modes/game_scene.cpp
+msgid "Lichess game"
+msgstr "Partita Lichess"
+
+#. Why a game cannot be shown. Circle is the controller's button.
+#: lichess/board_link.cpp
+msgid "Lichess is not answering. Still trying; press Circle to go back."
+msgstr "Lichess non risponde. Nuovi tentativi in corso; premi Cerchio per tornare indietro."
+
+#. Small label in capitals on the waiting screen: Lichess is looking for an opponent. About 25 letters.
+#: modes/start_game_scene.cpp
+msgid "Lichess pairing"
+msgstr "Abbinamento Lichess"
+
+#. Beside the choice Random. About 24 letters.
+#: modes/play_page.cpp
+msgid "Lichess picks your side"
+msgstr "Lichess sceglie il colore"
+
+#. Credits. CC0 is a licence's name: keep it.
+#: modes/settings_page.cpp
+msgid "Lichess puzzle database (CC0)"
+msgstr "Database dei problemi di Lichess (CC0)"
+
+#. Under the player's puzzle rating: the rating is no longer provisional.
+#: modes/home_page.cpp, modes/puzzles_page.cpp
+msgid "Lichess rating"
+msgstr "Punteggio Lichess"
+
+#. Why a game or a request failed, when Lichess gave no reason.
+#: lichess/board_link.cpp, modes/start_game_scene.cpp
+msgid "Lichess refused the request"
+msgstr "Lichess ha rifiutato la richiesta"
+
+#. {0} is the error's name in English, as Lichess sent it.
+#: modes/account_scene.cpp
+msgid "Lichess reported an error: {0}"
+msgstr "Lichess ha segnalato un errore: {0}"
+
+#. Name of Lichess's channel of live games. Write it as lichess.org does.
+#: modes/home_page.cpp, modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Lichess TV"
+msgstr "Lichess TV"
+
+#. A headline: there is no internet connection. Lichess TV stays as it is. About 34 letters.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Lichess TV is out of reach"
+msgstr "Lichess TV non è raggiungibile"
+
+#. Notice while the live game's connection is being restored. Lichess TV is a name.
+#: lichess/session.cpp
+msgid "Lichess TV lost the feed. Reconnecting…"
+msgstr "Lichess TV ha perso il segnale. Riconnessione…"
+
+#. A small line in capitals over "Daily Puzzle": where the puzzles come from and how often. About 19 letters (24 are shrunk to fit).
+#: modes/puzzles_page.cpp
+msgid "Lichess · every day"
+msgstr "Lichess · ogni giorno"
+
+#. A small line in capitals over "Puzzle Training": the puzzles come from Lichess and count for the rating. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "Lichess · rated"
+msgstr "Lichess · classificati"
+
+#. A small badge on the Lichess TV card: on air. In capitals; very short.
+#: modes/home_page.cpp
+msgid "LIVE"
+msgstr "LIVE"
+
+#. Lichess TV: a tag beside the title, the game is being played right now. About 12 letters.
+#: modes/home_page.cpp, modes/tv_scene.cpp
+msgid "Live"
+msgstr "In diretta"
+
+#. Shown beside a spinner while a puzzle is being fetched.
+#: modes/puzzle_scene.cpp
+msgid "Loading"
+msgstr "Caricamento"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Long puzzle" (three moves to find).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Long"
+msgstr "Problema lungo"
+
+#. Game screen, state line: an earlier position of the game is on the board.
+#: modes/game_scene.cpp
+msgid "Looking back"
+msgstr "Posizione precedente"
+
+#. Beside or under a player's name once the game is over: this player lost. One short word (about 10 letters).
+#: modes/game_scene.cpp
+msgid "Lost"
+msgstr "Ha perso"
+
+#. A board's name: a wooden board, light.
+#: board/board_view.hpp
+msgid "Maple"
+msgstr "Acero"
+
+#. A board's name: a board of stone.
+#: board/board_view.hpp
+msgid "Marble"
+msgstr "Marmo"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Master games" (puzzles from games of titled players).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Master"
+msgstr "Partite di Maestri"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Master vs Master games".
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Master vs master"
+msgstr "Partite fra Maestri"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles that end in checkmate.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate"
+msgstr "Scacco matto"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate in 1"
+msgstr "Matto in 1"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate in 2"
+msgstr "Matto in 2"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate in 3"
+msgstr "Matto in 3"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate in 4"
+msgstr "Matto in 4"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Mate in 5 or more"
+msgstr "Matto in 5 o più mosse"
+
+#. A label: what each side's pieces are worth. Small capitals; about 14 letters.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Material"
+msgstr "Materiale"
+
+#. A board's name: flat green squares.
+#: board/board_view.hpp
+msgid "Meadow"
+msgstr "Prato"
+
+#. Button hint: on the home screen, hand the controller to the menu at the left; in a game or a puzzle, open its menu.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/profile_page.cpp, modes/puzzle_scene.cpp, modes/puzzles_page.cpp, modes/settings_page.cpp
+msgid "Menu"
+msgstr "Menu"
+
+#. Button on the result card: leave the game and go back to the app's menu. About 16 letters.
+#: modes/game_scene.cpp
+msgctxt "button"
+msgid "Menu"
+msgstr "Menu"
+
+#: modes/settings_page.cpp
+msgid "Menu navigation and selection."
+msgstr "Navigazione e selezione nei menu."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles from the middle phase of a game.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Middlegame"
+msgstr "Mediogioco"
+
+#. A small label over the number of mistakes of a run, when it is exactly one. About 14 letters.
+#: modes/puzzle_scene.cpp
+msgid "Mistake"
+msgstr "Errore"
+
+#. A small label over the number of mistakes of a run. About 14 letters.
+#: modes/puzzle_scene.cpp
+msgid "Mistakes"
+msgstr "Errori"
+
+#. A small label over "0": Puzzle Streak ends at the first mistake.
+#: modes/puzzles_page.cpp
+msgid "Mistakes allowed"
+msgstr "Errori ammessi"
+
+#. The first card of the theme catalogue: puzzles of every theme. About 17 letters fit one line.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Mixed themes"
+msgstr "Temi misti"
+
+#. Button hint for L1 and R1: go to the next way to play (Online, Computer, Friend).
+#: modes/play_page.cpp
+msgid "Mode"
+msgstr "Modalità"
+
+#. A tab of the Puzzles page: the four ways to play. Keep it short (about 10 letters).
+#: modes/puzzles_page.cpp
+msgid "Modes"
+msgstr "Modalità"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Morphy's mate"
+msgstr "Matto di Morphy"
+
+#. Settings, Display: the heading over how much the interface moves, and a label in small capitals in the drawing beside (about 10 letters).
+#: modes/settings_page.cpp
+msgid "Motion"
+msgstr "Animazioni"
+
+#. Button hint: move the cursor over the board (a verb, not a chess move).
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/profile_page.cpp, modes/puzzle_scene.cpp
+msgid "Move"
+msgstr "Naviga"
+
+#. Small heading over the number of the move a saved game is at ("Move 5"). About 10 letters.
+#: modes/play_page.cpp
+msgctxt "move number"
+msgid "Move"
+msgstr "Mossa"
+
+#. Short message: Lichess did not accept the player's move.
+#: modes/game_scene.cpp
+msgid "Move refused"
+msgstr "Mossa rifiutata"
+
+#. Settings, Play: the heading over how moves are made.
+#: modes/settings_page.cpp
+msgid "Moves"
+msgstr "Mosse"
+
+#. Lichess TV: where the moves will be listed. One line, about 60 letters.
+#: modes/tv_scene.cpp
+msgid "Moves appear here as they are played."
+msgstr "Le mosse appaiono qui man mano che vengono giocate."
+
+#. Under White, before a game starts. About 18 letters.
+#: modes/play_page.cpp
+msgid "Moves first"
+msgstr "Muove per primo"
+
+#: modes/settings_page.cpp
+msgid "Moves, captures, checks and results."
+msgstr "Mosse, catture, scacchi e risultati."
+
+#. Settings: the music's volume, and its meter's name in the picture beside.
+#: modes/settings_page.cpp
+msgid "Music"
+msgstr "Musica"
+
+#. Credits: {0} is a person's name.
+#: modes/settings_page.cpp
+msgid "Music decoding by {0}"
+msgstr "Decodifica della musica di {0}"
+
+#: modes/settings_page.cpp
+msgid "Music, game sounds and the sounds of the menus."
+msgstr "Musica, suoni di gioco e suoni dei menu."
+
+#. Takes the place of the small line over a mode's name when Lichess cannot be reached. About 19 letters (24 are shrunk to fit).
+#: modes/puzzles_page.cpp
+msgid "Needs a connection"
+msgstr "Serve la connessione"
+
+#. One line beside a mode's name when Lichess cannot be reached. At most 45 letters.
+#: modes/puzzles_page.cpp
+msgid "Needs a connection to Lichess"
+msgstr "Serve la connessione a Lichess"
+
+#. Button: start a game. About 16 letters.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/play_page.cpp
+msgid "New game"
+msgstr "Nuova partita"
+
+#. A small tag in capitals under the score of a run that beat the player's best result. About 14 letters.
+#: modes/puzzle_scene.cpp
+msgid "New record"
+msgstr "Nuovo record"
+
+#. The title when a run beat the player's best result.
+#: modes/puzzle_scene.cpp
+msgid "New record!"
+msgstr "Nuovo record!"
+
+#. Heading of the panel that shows what is about to be played. About 16 letters.
+#: modes/play_page.cpp
+msgid "Next game"
+msgstr "Prossima partita"
+
+#. A shortcut button once a puzzle is solved. About 18 letters.
+#: modes/puzzle_scene.cpp
+msgid "Next puzzle"
+msgstr "Problema successivo"
+
+#. A game without a clock. About 16 letters.
+#: modes/home_page.cpp, modes/play_page.cpp, modes/play_setup.cpp, modes/profile_page.cpp
+msgid "No clock"
+msgstr "Senza orologio"
+
+#. Lichess TV: a label over the text that says the TV cannot be reached. Small capitals.
+#: modes/play_page.cpp, modes/shell_scene.cpp, modes/tv_scene.cpp
+msgid "No connection"
+msgstr "Nessuna connessione"
+
+#. One line beside Puzzle Streak's and Puzzle Storm's names. At most 45 letters.
+#: modes/puzzles_page.cpp
+msgid "No connection needed"
+msgstr "Non serve la connessione"
+
+#. Why no game began.
+#: lichess/puzzle_sources.cpp, modes/puzzle_scene.cpp, modes/start_game_scene.cpp
+msgid "No connection to Lichess"
+msgstr "Nessuna connessione a Lichess"
+
+#. In the middle of a ring, in place of a percentage: the account has no games. In capitals on screen, on one line or two: words of 8 letters at most.
+#: modes/profile_page.cpp
+msgid "No games"
+msgstr "Nessuna partita"
+
+#. Large title where the games in progress would be. About 35 letters.
+#: modes/profile_page.cpp
+msgid "No games in progress"
+msgstr "Nessuna partita in corso"
+
+#. In place of the number of games: none were played at this speed.
+#: modes/play_page.cpp
+msgid "No games yet"
+msgstr "Ancora nessuna partita"
+
+#. On a time control's tile: no seconds are added after a move. About 16 letters.
+#: modes/play_setup.cpp
+msgid "No increment"
+msgstr "Senza incremento"
+
+#: modes/puzzle_scene.cpp
+msgid "No more puzzles here"
+msgstr "Qui non ci sono altri problemi"
+
+#: modes/puzzles_page.cpp
+msgid "No offline puzzles"
+msgstr "Nessun problema offline"
+
+#. Takes the place of the small line over a mode's name when the puzzles stored with the app are missing. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "No puzzle pack"
+msgstr "Pacchetto mancante"
+
+#. The title when a puzzle could not be loaded; the reason follows under it.
+#: modes/puzzle_scene.cpp
+msgid "No puzzle to show"
+msgstr "Nessun problema da mostrare"
+
+#: lichess/puzzle_sources.cpp
+msgid "No puzzles right now"
+msgstr "Nessun problema al momento"
+
+#. Under an empty figure: the signed-in player has no puzzle rating yet. About 30 letters.
+#: modes/home_page.cpp, modes/play_page.cpp, modes/profile_page.cpp, modes/puzzles_page.cpp
+msgid "No rating yet"
+msgstr "Ancora nessun punteggio"
+
+#. Under a best score of 0: no Puzzle Streak or Puzzle Storm run was played here. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "No run yet on this console"
+msgstr "Nessun tentativo su questa console"
+
+#. Lichess TV, under "Last move": no move has been played yet.
+#: modes/tv_scene.cpp
+msgid "None yet"
+msgstr "Ancora nessuna"
+
+#. How hard the puzzles are, as on lichess.org (Easier, Normal, Harder, Hardest). One of four segments side by side: 8 letters fit, 11 are shrunk to fit.
+#: modes/puzzle_scene.hpp
+msgctxt "difficulty"
+msgid "Normal"
+msgstr "Normale"
+
+#. Under "Internet": the game works without a connection. About 14 letters.
+#: modes/play_page.cpp
+msgid "Not needed"
+msgstr "Non serve"
+
+#. Under the label "Results": puzzle results do not count (the player is not signed in).
+#: modes/puzzles_page.cpp
+msgctxt "puzzle results"
+msgid "Not rated"
+msgstr "Non classificati"
+
+#. State in the top strip, and the title of the menu's card: connected, but no Lichess account is signed in. About 16 letters.
+#: app/chrome.cpp, modes/shell_scene.cpp
+msgid "Not signed in"
+msgstr "Nessun account"
+
+#. The game has not started yet: the state line, and the plate where resigning will be. About 18 letters.
+#: modes/game_scene.cpp
+msgid "Not started"
+msgstr "Non iniziata"
+
+#. The title when there are no more puzzles (the daily puzzle is solved, or every puzzle of a theme).
+#: modes/puzzle_scene.cpp
+msgid "Nothing more to solve"
+msgstr "Non c'è altro da risolvere"
+
+#. Watch: this side has not captured a piece yet.
+#: modes/watch_page.cpp
+msgid "Nothing yet"
+msgstr "Ancora niente"
+
+#. A board's name: flat blue squares.
+#: board/board_view.hpp
+msgid "Ocean"
+msgstr "Oceano"
+
+#. Stands after the chosen level, a large figure: "3 of 8". {0} is the highest level. Very short: about 5 characters.
+#: modes/play_page.cpp
+msgid "of {0}"
+msgstr "di {0}"
+
+#. A switch's state. Short: 3 or 4 letters.
+#: modes/game_scene.cpp, ui/components/form.hpp
+msgid "Off"
+msgstr "No"
+
+#. "Off" is the switch's state, as the text Off.
+#: modes/settings_page.cpp
+msgid "Off shows a picker for every promotion."
+msgstr "Con No, a ogni promozione scegli tu il pezzo."
+
+#. Action plate and menu row: propose a draw to the opponent. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Offer draw"
+msgstr "Offri patta"
+
+#. No connection to Lichess: the state in the top strip and the small heading of the menu's card; also the kind of a game that needs no connection (Pass & Play). Short: about 10 letters.
+#: app/chrome.cpp, modes/home_page.cpp, modes/shell_scene.cpp
+msgid "Offline"
+msgstr "Offline"
+
+#. Small heading shown instead of the daily puzzle when there is no connection.
+#: modes/home_page.cpp
+msgid "Offline puzzles"
+msgstr "Problemi offline"
+
+#. A small line in capitals over "Puzzle Storm": it needs no connection and lasts three minutes. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "Offline · 3 minutes"
+msgstr "Offline · 3 minuti"
+
+#. A small line in capitals over "Puzzle Streak": it needs no connection and has no end. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "Offline · endless"
+msgstr "Offline · senza fine"
+
+#. A switch's state. Short: 3 or 4 letters.
+#: modes/game_scene.cpp, ui/components/form.hpp
+msgid "On"
+msgstr "Sì"
+
+#. Watch: the game shown is being played right now. Small capitals; about 16 letters.
+#: modes/watch_page.cpp
+msgid "On air"
+msgstr "In onda"
+
+#. Settings, Board: the heading over what is drawn on the board.
+#: modes/settings_page.cpp
+msgid "On the board"
+msgstr "Sulla scacchiera"
+
+#. Heading over "Pass & Play". In capitals on screen.
+#: modes/home_page.cpp, modes/play_page.cpp
+msgid "On this console"
+msgstr "Su questa console"
+
+#. One line under "Puzzle Streak", and a small line in capitals over the run's steps. About 30 letters.
+#: modes/home_page.cpp, modes/puzzle_scene.cpp
+msgid "One mistake ends the run"
+msgstr "Al primo errore è finita"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "One-move puzzle".
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "One move"
+msgstr "Problema da una mossa"
+
+#. What Daily Puzzle is, in two lines (three smaller ones at most: about 200 letters).
+#: modes/puzzles_page.cpp
+msgid "One new puzzle every day, shared by every player on Lichess. Find the best move to win material or deliver mate."
+msgstr "Un nuovo problema ogni giorno, lo stesso per tutti i giocatori di Lichess. Trova la mossa migliore per guadagnare materiale o dare matto."
+
+#. Under the daily puzzle's title. Three lines at most: about 140 letters.
+#: modes/home_page.cpp
+msgid "One new puzzle every day, shared by every player on Lichess. Find the best move."
+msgstr "Un nuovo problema ogni giorno, lo stesso per tutti i giocatori di Lichess. Trova la mossa migliore."
+
+#. State in the top strip: connected to Lichess and signed in. One or two short words.
+#: app/chrome.cpp
+msgid "Online"
+msgstr "Online"
+
+#. Tab of the Play page: games against other players on Lichess. About 20 letters.
+#: modes/play_page.cpp
+msgctxt "way to play"
+msgid "Online"
+msgstr "Online"
+
+#. Settings, Play: the heading over what concerns games on Lichess.
+#: modes/profile_page.cpp, modes/settings_page.cpp
+msgid "Online games"
+msgstr "Partite online"
+
+#: modes/settings_page.cpp
+msgid "Online games, puzzles and TV come from Lichess, the free and open-source chess server at lichess.org. ProsperoLichess uses its public API and is not affiliated with or endorsed by Lichess."
+msgstr "Le partite online, i problemi e la TV provengono da Lichess, il server di scacchi gratuito e open source su lichess.org. ProsperoLichess usa la sua API pubblica e non è affiliato a Lichess né da esso approvato."
+
+#. Button hint: open the highlighted item.
+#: modes/settings_page.cpp, modes/shell_scene.cpp
+msgid "Open"
+msgstr "Apri"
+
+#: modes/update_scene.cpp
+msgid "Open it again to use version {0}."
+msgstr "Riaprilo per usare la versione {0}."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. Here: puzzles from the first phase of a game.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Opening"
+msgstr "Apertura"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Opera mate"
+msgstr "Matto dell'opera"
+
+#. The name of the game for two players who share one controller. A large title and a button: about 14 letters.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/play_page.cpp
+msgid "Pass & Play"
+msgstr "Passa e gioca"
+
+#. A small label in capitals at the top of a pause menu.
+#: modes/puzzle_scene.cpp
+msgid "Paused"
+msgstr "In pausa"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Pawn endgame"
+msgstr "Finale di pedoni"
+
+#. On the tile "3 days": the days are for every single move. About 16 letters.
+#: modes/play_setup.cpp
+msgid "Per move"
+msgstr "Per mossa"
+
+#. Label of the field the token is typed into. A token is a long password Lichess makes for an app.
+#: modes/account_scene.cpp
+msgid "Personal token"
+msgstr "Token personale"
+
+#. Under "Games in progress". At most three lines of about 36 letters.
+#: modes/profile_page.cpp
+msgid "Pick up the games you have going, on the console and everywhere else."
+msgstr "Riprendi le partite che hai in corso, su console e su ogni altro dispositivo."
+
+#. Settings, Display: the heading over the picture's size and the frame counter, and the title of the drawing beside.
+#: modes/settings_page.cpp
+msgid "Picture"
+msgstr "Immagine"
+
+#. Settings: the row that chooses the piece set. Also a row of the credits.
+#: modes/settings_page.cpp
+msgid "Pieces"
+msgstr "Pezzi"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Pillsbury's mate"
+msgstr "Matto di Pillsbury"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Pin"
+msgstr "Inchiodatura"
+
+#. Button hint: pick up or put down the piece under the cursor.
+#: modes/game_scene.cpp, modes/puzzle_scene.cpp
+msgid "Place"
+msgstr "Prendi/posa"
+
+#. On the Puzzles page, a button hint: start the highlighted way to play.
+#: modes/play_page.cpp, modes/profile_page.cpp, modes/puzzles_page.cpp, modes/shell_scene.cpp
+msgid "Play"
+msgstr "Gioca"
+
+#. Settings: the group about how moves are made (a noun, as in "how you play"), not the page that starts a game. About 14 letters.
+#: modes/settings_page.cpp
+msgctxt "settings"
+msgid "Play"
+msgstr "Gioco"
+
+#. A button when a run is over: start another run. About 18 letters.
+#: modes/puzzle_scene.cpp
+msgid "Play again"
+msgstr "Gioca di nuovo"
+
+#. Under "Online games". At most three lines of about 36 letters.
+#: modes/profile_page.cpp
+msgid "Play rated and casual games against players from all over the world."
+msgstr "Gioca partite classificate e amichevoli contro giocatori di tutto il mondo."
+
+#. Under "Sign in to Lichess". At most three lines of about 55 letters.
+#: modes/profile_page.cpp
+msgid "Play rated puzzles and online games, and pick up your games in progress on this console."
+msgstr "Gioca problemi classificati e partite online, e riprendi su questa console le tue partite in corso."
+
+#. Under the choice Casual. About 36 letters.
+#: modes/play_page.cpp
+msgid "Play without rating points"
+msgstr "Gioca senza punti in palio"
+
+#. A small label over how many times today's puzzle was played on Lichess.
+#: modes/home_page.cpp, modes/puzzles_page.cpp
+msgid "Played"
+msgstr "Giocato"
+
+#. A small label over the number of puzzles the player has played on Lichess.
+#: modes/puzzles_page.cpp
+msgid "Played on Lichess"
+msgstr "Giocati su Lichess"
+
+#. Small heading over the figure 2. About 12 letters.
+#: modes/play_page.cpp
+msgid "Players"
+msgstr "Giocatori"
+
+#. About: a heading. Lichess stays as it is.
+#: modes/settings_page.cpp
+msgid "Powered by Lichess"
+msgstr "Basato su Lichess"
+
+#. Under the heading while a solved puzzle is tried again. At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "Practice: this result is not counted"
+msgstr "Esercizio: questo risultato non conta"
+
+#. Settings: Lichess's word for a move entered during the opponent's turn. Use the word lichess.org uses.
+#: modes/settings_page.cpp
+msgid "Premoves"
+msgstr "Pre-mosse"
+
+#. Settings: the title of the board that shows the chosen look, in small capitals. About 12 letters.
+#: modes/settings_page.cpp
+msgid "Preview"
+msgstr "Anteprima"
+
+#. The Profile page's name. About 12 letters.
+#: modes/profile_page.cpp, modes/shell_scene.cpp
+msgid "Profile"
+msgstr "Profilo"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. A pawn becomes a piece.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Promotion"
+msgstr "Promozione"
+
+#. Row of the game menu: ask the opponent to let the player take the last move back.
+#: modes/game_scene.cpp
+msgid "Propose takeback"
+msgstr "Chiedi di ritirare la mossa"
+
+#: modes/update_scene.cpp
+msgid "ProsperoLichess closes now."
+msgstr "ProsperoLichess ora si chiude."
+
+#: modes/update_scene.cpp
+msgid "ProsperoLichess closes to finish the update."
+msgstr "ProsperoLichess si chiude per completare l'aggiornamento."
+
+#: modes/update_scene.cpp
+msgid "ProsperoLichess was not changed."
+msgstr "ProsperoLichess non è stato modificato."
+
+#. Under the label "Rating": the player's puzzle rating is still provisional (few results so far).
+#: modes/puzzles_page.cpp
+msgid "Provisional"
+msgstr "Provvisorio"
+
+#. After the number of games and a dot, in lower case: Lichess is not yet sure of this rating (it shows a question mark). "9 games · provisional".
+#: modes/profile_page.cpp
+msgid "provisional"
+msgstr "provvisorio"
+
+#. Under the player's puzzle rating: the rating is still provisional.
+#: modes/home_page.cpp, modes/puzzles_page.cpp
+msgid "Provisional rating"
+msgstr "Punteggio provvisorio"
+
+#. A small label over a puzzle's number ("#c8sj6"), at most 12 letters; also what a puzzle without a theme is called.
+#: modes/puzzle_scene.cpp
+msgid "Puzzle"
+msgstr "Problema"
+
+#. A small label over the rating of the puzzle on the board. About 18 letters.
+#: modes/puzzle_scene.cpp
+msgid "Puzzle rating"
+msgstr "Punteggio problema"
+
+#. A notice: Lichess could not be told the result of a puzzle.
+#: lichess/puzzle_sources.cpp
+msgid "Puzzle result not saved yet. It will be sent again."
+msgstr "Risultato del problema non ancora salvato. Verrà inviato di nuovo."
+
+#. A way to play puzzles, as lichess.org names it: as many puzzles as possible in three minutes. A tile's title (about 17 letters; up to 22 are shrunk to fit).
+#: modes/home_page.cpp, modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Puzzle Storm"
+msgstr "Puzzle Storm"
+
+#. A way to play puzzles, as lichess.org names it: solve puzzles in a row until the first mistake. A tile's title (about 17 letters; up to 22 are shrunk to fit).
+#: modes/home_page.cpp, modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Puzzle Streak"
+msgstr "Puzzle Streak"
+
+#. The screen's name while puzzles of one theme are solved. Small capitals, about 25 letters.
+#: modes/puzzle_scene.cpp
+msgid "Puzzle Themes"
+msgstr "Problemi a tema"
+
+#. A way to play puzzles (rated puzzles from Lichess). A tile's title (about 17 letters; up to 22 are shrunk to fit) and a large heading.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Puzzle Training"
+msgstr "Allenamento"
+
+#. The Puzzles page's name. Also a row of the credits (the puzzles' source).
+#: modes/home_page.cpp, modes/profile_page.cpp, modes/puzzles_page.cpp, modes/settings_page.cpp, modes/shell_scene.cpp
+msgid "Puzzles"
+msgstr "Problemi"
+
+#. A small caption over Puzzle Storm's combos: solving several puzzles in a row adds seconds to the clock.
+#: modes/puzzles_page.cpp
+msgid "Puzzles in a row add seconds"
+msgstr "I problemi di fila danno secondi"
+
+#. A small label beside the number of puzzles stored with the app.
+#: modes/puzzles_page.cpp
+msgid "Puzzles on this console"
+msgstr "Problemi su questa console"
+
+#. A small label over a range of ratings ("1200 – 1700"): how hard the puzzles of the chosen difficulty are. About 16 letters.
+#: modes/puzzles_page.cpp
+msgid "Puzzles rated"
+msgstr "Fascia di punteggio"
+
+#. Label over a number: puzzles solved on this console.
+#: modes/home_page.cpp
+msgid "Puzzles solved"
+msgstr "Problemi risolti"
+
+#. Second line of the menu's card while offline: the puzzles stored on the console can still be played. About 22 letters a line, two lines at most.
+#: modes/shell_scene.cpp
+msgid "Puzzles still work"
+msgstr "I problemi funzionano ancora"
+
+#. Button hint: go back from the token keyboard to the code that a phone scans.
+#: modes/account_scene.cpp
+msgid "QR code"
+msgstr "Codice QR"
+
+#. Credits: {0} is "Project Nayuki". "QR Code generator" is what the library does; MIT stays.
+#: modes/settings_page.cpp
+msgid "QR Code generator by {0} (MIT)"
+msgstr "Generatore di codici QR di {0} (MIT)"
+
+#. Credits: the row about the code a phone scans.
+#: modes/settings_page.cpp
+msgid "QR codes"
+msgstr "Codici QR"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Queen endgame"
+msgstr "Finale di donna"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Queen and Rook" (an endgame with queens, rooks and pawns).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Queen rook endgame"
+msgstr "Finale di donna e torre"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Queenside attack"
+msgstr "Attacco sull'ala di donna"
+
+#: modes/settings_page.cpp
+msgid "Queue your next move during the opponent's turn."
+msgstr "Prepara la tua mossa mentre tocca all'avversario."
+
+#. Settings, Display: what the interface does with reduced motion on. About 20 letters.
+#: modes/settings_page.cpp
+msgid "Quick fades"
+msgstr "Dissolvenze rapide"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Quiet move"
+msgstr "Mossa calma"
+
+#. Under the Puzzle Storm card. About 34 letters.
+#: modes/home_page.cpp
+msgid "Race the clock"
+msgstr "Corri contro il tempo"
+
+#. What Puzzle Storm is, in two lines (three smaller ones at most: about 200 letters). A combo is several puzzles solved in a row.
+#: modes/puzzles_page.cpp
+msgid "Race the clock through as many puzzles as you can. Combos add time; mistakes cost ten seconds."
+msgstr "Corri contro il tempo e risolvi più problemi che puoi. Le combo aggiungono tempo; gli errori costano dieci secondi."
+
+#. A choice of side against the computer: Lichess picks White or Black. About 14 letters.
+#: modes/play_page.cpp
+msgid "Random"
+msgstr "Casuale"
+
+#. A Lichess TV channel and a speed of play: use lichess.org's word. About 14 letters.
+#: lichess/board_link.cpp, lichess/session.cpp, modes/game_scene.cpp, modes/home_page.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp, modes/tv_feed.cpp
+msgid "Rapid"
+msgstr "Rapid"
+
+#. Under the Online tab: the speeds on offer, in lower case after the first. About 35 letters.
+#: modes/play_page.cpp
+msgid "Rapid, classical, correspondence"
+msgstr "Rapid, classical, corrispondenza"
+
+#. The game counts for the rating. A choice, a tag in capitals and a word after a speed ("Rapid · Rated"). About 12 letters.
+#: lichess/board_link.cpp, modes/play_page.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/start_game_scene.cpp
+msgid "Rated"
+msgstr "Classificata"
+
+#. Under the label "Results": puzzle results count for the player's Lichess puzzle rating.
+#: modes/puzzles_page.cpp
+msgctxt "puzzle results"
+msgid "Rated"
+msgstr "Classificati"
+
+#. One line under "Puzzle Training" on the puzzle screen, for a signed-in player. About 40 letters.
+#: modes/puzzle_scene.cpp
+msgid "Rated on your Lichess account"
+msgstr "Classificati sul tuo account Lichess"
+
+#. Title of a tile: what an account brings. About 24 letters.
+#: modes/profile_page.cpp
+msgid "Rated puzzles"
+msgstr "Problemi classificati"
+
+#: modes/account_scene.cpp
+msgid "Rated puzzles, online games and your games in progress are ready."
+msgstr "Problemi classificati, partite online e le tue partite in corso sono pronti."
+
+#. Under the title "Sign in to Lichess"; no full stop at the end.
+#: modes/account_scene.cpp
+msgid "Rated puzzles, online games and your games in progress, on this console"
+msgstr "Problemi classificati, partite online e le tue partite in corso, su questa console"
+
+#. A small label over a rating: of a puzzle, or of the player (then with "Provisional" or "Established" under it). About 12 letters.
+#: modes/home_page.cpp, modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Rating"
+msgstr "Punteggio"
+
+#. The opponent's rating: {0} is a number such as 1871. About 12 characters.
+#: modes/profile_page.cpp
+msgid "Rating {0}"
+msgstr "Punteggio {0}"
+
+#. How far a Puzzle Streak run went; {0} is the rating of its last puzzle ("1180").
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Reached puzzles rated {0}"
+msgstr "Raggiunti problemi da {0} punti"
+
+#. Notice: a live connection (a game, the TV feed) works again.
+#: lichess/session.cpp
+msgid "Reconnected"
+msgstr "Riconnesso"
+
+#. Watch and Lichess TV: the connection dropped and is being made again. Small capitals; about 16 letters.
+#: app/chrome.cpp, modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Reconnecting"
+msgstr "Riconnessione"
+
+#. Game screen, state line: the connection to the game dropped and is being made again.
+#: modes/game_scene.cpp
+msgid "Reconnecting…"
+msgstr "Riconnessione…"
+
+#. Settings: fewer animations.
+#: modes/settings_page.cpp
+msgid "Reduced motion"
+msgstr "Animazioni ridotte"
+
+#: modes/settings_page.cpp
+msgid "Replaces slides and bounces with quick fades."
+msgstr "Sostituisce scorrimenti e rimbalzi con dissolvenze rapide."
+
+#. Under Black, before a game starts: Black answers White's first move. About 18 letters.
+#: modes/play_page.cpp
+msgid "Replies"
+msgstr "Risponde"
+
+#. The plate beside the actions when one press is enough: give the game up. A verb.
+#: modes/game_scene.cpp
+msgid "Resign"
+msgstr "Abbandona"
+
+#. Result card, how the game ended: a player gave up.
+#: modes/game_scene.cpp
+msgid "Resignation"
+msgstr "Abbandono"
+
+#. Settings: the picture's size (1080p, 1440p, 4K).
+#: modes/settings_page.cpp
+msgid "Resolution"
+msgstr "Risoluzione"
+
+#. Action plate, once the game is over: show the result card again. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Result"
+msgstr "Risultato"
+
+#. A small label over "Rated" or "Not rated": whether puzzle results count for the Lichess rating.
+#: modes/puzzles_page.cpp
+msgid "Results"
+msgstr "Risultati"
+
+#. One line beside Puzzle Training's name, for a signed-in player. At most 45 letters.
+#: modes/puzzles_page.cpp
+msgid "Results count on Lichess"
+msgstr "I risultati contano su Lichess"
+
+#. Go on with what was paused: a row of the pause menu and the button hint that closes it.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/profile_page.cpp, modes/puzzle_scene.cpp
+msgid "Resume"
+msgstr "Riprendi"
+
+#. Button: go on with the saved game. About 16 letters.
+#: modes/play_page.cpp
+msgid "Resume game"
+msgstr "Riprendi partita"
+
+#. A shortcut button once a puzzle is solved: solve the same puzzle again. About 12 letters.
+#: modes/puzzle_scene.cpp
+msgid "Retry"
+msgstr "Riprova"
+
+#. A row of the pause menu: leave the screen.
+#: modes/game_scene.cpp, modes/puzzle_scene.cpp
+msgid "Return to menu"
+msgstr "Torna al menu"
+
+#. Small label in capitals before the position being looked at ("REVIEW  After 12. Nxd4"). A noun, about 12 letters.
+#: modes/game_scene.cpp
+msgid "Review"
+msgstr "Revisione"
+
+#. Button on the result card: step through the moves of the finished game. About 16 letters.
+#: modes/game_scene.cpp
+msgid "Review game"
+msgstr "Rivedi partita"
+
+#. Under the difference of ratings: today's puzzle is rated about as high as the player. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "Right at your puzzle rating"
+msgstr "In linea con il tuo punteggio"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Rook endgame"
+msgstr "Finale di torre"
+
+#: modes/settings_page.cpp
+msgid "Rumble on captures, checks and results."
+msgstr "Vibrazione per catture, scacchi e risultati."
+
+#. The title when a Puzzle Storm run was ended by the player.
+#: modes/puzzle_scene.cpp
+msgid "Run over"
+msgstr "Tentativo terminato"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Sacrifice"
+msgstr "Sacrificio"
+
+#. First step of signing in with a phone: scan the code. A short heading: about 16 letters.
+#: modes/account_scene.cpp
+msgctxt "step"
+msgid "Scan"
+msgstr "Inquadra"
+
+#. Heading beside the QR code. One line of about 32 letters is best; longer text takes two.
+#: modes/account_scene.cpp
+msgid "Scan the code with your phone"
+msgstr "Inquadra il codice con il telefono"
+
+#: modes/account_scene.cpp
+msgid "Scan the code with your phone's camera. Your phone must be on the same network as this PS5."
+msgstr "Inquadra il codice con la fotocamera del telefono. Il telefono deve essere sulla stessa rete di questa PS5."
+
+#: modes/account_scene.cpp
+msgid "Scan to create a personal token at lichess.org, then type it here."
+msgstr "Inquadra il codice per creare un token personale su lichess.org, poi digitalo qui."
+
+#. Button hint (a verb): scroll the About text.
+#: modes/settings_page.cpp
+msgid "Scroll"
+msgstr "Scorri"
+
+#. Button hint for L1 and R1: switch between the tabs of the page.
+#: modes/puzzles_page.cpp
+msgid "Section"
+msgstr "Sezione"
+
+#. Button hint: choose the highlighted item.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/play_page.cpp, modes/puzzle_scene.cpp
+msgid "Select"
+msgstr "Seleziona"
+
+#. Waiting screen, what is happening before a game against the computer. About 22 letters.
+#: modes/start_game_scene.cpp
+msgid "Setting up the board"
+msgstr "Preparazione scacchiera"
+
+#. The settings page's name.
+#: modes/settings_page.cpp, modes/shell_scene.cpp
+msgid "Settings"
+msgstr "Impostazioni"
+
+#. One line beside Daily Puzzle's name. At most 45 letters.
+#: modes/puzzles_page.cpp
+msgid "Shared by every player"
+msgstr "Lo stesso per tutti i giocatori"
+
+#. Button hint on the token keyboard: capital letters.
+#: modes/account_scene.cpp
+msgid "Shift"
+msgstr "Maiuscole"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Short puzzle" (two moves to find).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Short"
+msgstr "Problema breve"
+
+#. Settings: FPS is frames per second; keep the letters FPS.
+#: modes/settings_page.cpp
+msgid "Show FPS"
+msgstr "Mostra FPS"
+
+#. A small line in capitals beside the label "Themes": the themes would give the answer away.
+#: modes/puzzle_scene.cpp
+msgid "Shown when the puzzle is solved"
+msgstr "Visibili a problema risolto"
+
+#. Under the channel Chess960: the pieces of the first rank start in another order. About 25 letters.
+#: modes/tv_feed.cpp
+msgid "Shuffled back rank"
+msgstr "Prima traversa rimescolata"
+
+#. Button and button hint: open the screen where one signs in to Lichess. About 14 letters.
+#: modes/play_page.cpp, modes/profile_page.cpp
+msgid "Sign in"
+msgstr "Accedi"
+
+#. Large title on two lines; \n is where the line breaks (without one the text breaks where the column ends). Each line about 12 letters.
+#: modes/account_scene.cpp
+msgid "Sign in\nto Lichess"
+msgstr "Accedi\na Lichess"
+
+#. Under an empty figure: the player's rating is needed to compare it with today's puzzle. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "Sign in to compare"
+msgstr "Accedi per confrontare"
+
+#. Tells a player who is not signed in why Puzzle Training shows no rating. One line of about 30 letters (two short lines at most).
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Sign in to earn a rating"
+msgstr "Accedi per avere un punteggio"
+
+#. Large title of the Profile page while nobody is signed in. One line of about 24 letters.
+#: modes/profile_page.cpp
+msgid "Sign in to Lichess"
+msgstr "Accedi a Lichess"
+
+#. "Authorize" is a button of lichess.org: use the word it has there.
+#: modes/account_scene.cpp
+msgid "Sign in to Lichess and press Authorize. Lichess will warn that the address is not secure: it is this console on your home network."
+msgstr "Accedi a Lichess e premi \"Authorize\". Lichess avviserà che l'indirizzo non è sicuro: è questa console sulla tua rete di casa."
+
+#. Why no game began: the player is signed out.
+#: modes/start_game_scene.cpp
+msgid "Sign in to Lichess first: games are played on your account."
+msgstr "Prima accedi a Lichess: le partite si giocano con il tuo account."
+
+#. Large title of at most two lines, each of about 20 letters.
+#: modes/play_page.cpp
+msgid "Sign in to play online"
+msgstr "Accedi per giocare online"
+
+#. Large title of at most two lines, each of about 20 letters.
+#: modes/play_page.cpp
+msgid "Sign in to play the computer"
+msgstr "Accedi per giocare contro il computer"
+
+#. Second line of the menu's card: where to sign in (Profile is the menu entry). About 22 letters a line, two lines at most.
+#: modes/shell_scene.cpp
+msgid "Sign in under Profile"
+msgstr "Accedi da Profilo"
+
+#. Button: remove the account from this console. It has to be held down. About 14 letters.
+#: modes/profile_page.cpp
+msgid "Sign out"
+msgstr "Esci"
+
+#. Large title after signing in failed. About 35 letters.
+#: modes/account_scene.cpp
+msgid "Sign-in did not finish"
+msgstr "Accesso non completato"
+
+#: modes/account_scene.cpp
+msgid "Sign-in was cancelled on the phone."
+msgstr "L'accesso è stato annullato dal telefono."
+
+#. Large title and short message; {0} is the player's name.
+#: modes/account_scene.cpp
+msgid "Signed in as {0}"
+msgstr "Accesso effettuato come {0}"
+
+#. Heading of the web page the phone shows when signing in worked.
+#: modes/account_scene.cpp
+msgid "Signed in to ProsperoLichess"
+msgstr "Accesso effettuato a ProsperoLichess"
+
+#. A short message at the top after signing out.
+#: modes/profile_page.cpp
+msgid "Signed out"
+msgstr "Uscita effettuata"
+
+#. Large title while the account is being checked. About 16 letters.
+#: app/chrome.cpp, modes/account_scene.cpp, modes/play_page.cpp, modes/profile_page.cpp
+msgid "Signing in"
+msgstr "Accesso in corso"
+
+#. Lichess TV: a label over the moves played while the player has been watching. Small capitals.
+#: modes/tv_scene.cpp
+msgid "Since you tuned in"
+msgstr "Da quando guardi"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Skewer"
+msgstr "Infilata"
+
+#. A shortcut button in Puzzle Streak: skip this puzzle (a verb). Keep it short (about 12 letters).
+#: modes/puzzle_scene.cpp, modes/update_scene.cpp
+msgid "Skip"
+msgstr "Salta"
+
+#. A small label over "1 left" or "Used": the one puzzle a Puzzle Streak run may skip (a noun). About 12 letters.
+#: modes/puzzle_scene.cpp
+msgctxt "skips left"
+msgid "Skip"
+msgstr "Salto"
+
+#. A row of the pause menu.
+#: modes/puzzle_scene.cpp
+msgid "Skip this puzzle"
+msgstr "Salta questo problema"
+
+#. A small label over "1": how many puzzles a Puzzle Streak run may skip.
+#: modes/puzzles_page.cpp
+msgid "Skips"
+msgstr "Salti"
+
+#. Settings, Display: what the interface does with reduced motion off. About 20 letters.
+#: modes/settings_page.cpp
+msgid "Slides and springs"
+msgstr "Scorrimenti e rimbalzi"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Smothered mate"
+msgstr "Matto affogato"
+
+#. The state of the puzzle: the player asked to see the solution.
+#: modes/puzzle_scene.cpp
+msgid "Solution shown"
+msgstr "Soluzione mostrata"
+
+#. Button: open the daily puzzle to solve it.
+#: modes/home_page.cpp
+msgid "Solve"
+msgstr "Risolvi"
+
+#. At the start of a Puzzle Storm run, before its first puzzle is over. At most 65 letters.
+#: modes/puzzle_scene.cpp
+msgid "Solve as many as you can before the clock runs out"
+msgstr "Risolvine più che puoi prima che scada il tempo"
+
+#. What Puzzle Streak is, under its title. Three lines at most: about 140 letters.
+#: modes/home_page.cpp
+msgid "Solve puzzles of rising difficulty. One mistake ends the run, and you get a single skip."
+msgstr "Risolvi problemi di difficoltà crescente. Al primo errore è finita, e hai un solo salto."
+
+#. What Puzzle Streak is, in two lines (three smaller ones at most: about 200 letters).
+#: modes/puzzles_page.cpp
+msgid "Solve puzzles of rising difficulty. One mistake ends the run, and you get a single skip. How far can you go?"
+msgstr "Risolvi problemi di difficoltà crescente. Al primo errore è finita, e hai un solo salto. Fin dove arriverai?"
+
+#. Under "Rated puzzles". At most three lines of about 36 letters.
+#: modes/profile_page.cpp
+msgid "Solve the daily puzzle and train with puzzles that count for your rating."
+msgstr "Risolvi il problema del giorno e allenati con problemi che contano per il tuo punteggio."
+
+#. A small label with the number of puzzles solved in a Puzzle Storm run (over the number, and under it inside a ring: 8 letters fit there, 10 are shrunk to fit).
+#: modes/puzzle_scene.cpp
+msgid "Solved"
+msgstr "Risolti"
+
+#. Under the heading of a solved puzzle. At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "Solved after a mistake"
+msgstr "Risolto dopo un errore"
+
+#. A small label beside the number of puzzles solved on this console. About 15 letters.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Solved here"
+msgstr "Risolti qui"
+
+#. Under the best Puzzle Storm score: that many puzzles were solved in the three minutes of a run.
+#: modes/puzzles_page.cpp
+msgid "Solved in three minutes"
+msgstr "Risolti in tre minuti"
+
+#. Under the heading of a solved puzzle; {0} is the number of seconds it took, s stands for seconds.
+#: modes/puzzle_scene.cpp
+msgid "Solved in {0} s"
+msgstr "Risolto in {0} s"
+
+#. Under the heading of a solved puzzle. At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "Solved with a hint"
+msgstr "Risolto con un suggerimento"
+
+#. The state of the puzzle: solved after a mistake or a hint.
+#: modes/puzzle_scene.cpp
+msgid "Solved with help"
+msgstr "Risolto con aiuto"
+
+#. The state of the puzzle: solved without help.
+#: modes/puzzle_scene.cpp
+msgid "Solved!"
+msgstr "Risolto!"
+
+#. Settings: the group with the volumes. About 14 letters.
+#: modes/settings_page.cpp
+msgid "Sound"
+msgstr "Audio"
+
+#. Credits: the row about the app's sounds.
+#: modes/settings_page.cpp
+msgid "Sound and music"
+msgstr "Suoni e musica"
+
+#. About: before the web address of the app's source code.
+#: modes/settings_page.cpp
+msgid "Source"
+msgstr "Codice sorgente"
+
+#. On-screen keyboard: the key that types a space. About 8 letters.
+#: ui/components/keyboard.hpp
+msgid "Space"
+msgstr "Spazio"
+
+#. Result card, how the game ended: the side to move has no legal move and is not in check (a draw).
+#: modes/game_scene.cpp
+msgid "Stalemate"
+msgstr "Stallo"
+
+#. On the Puzzles page, a button hint: start solving puzzles of the highlighted theme.
+#: modes/home_page.cpp, modes/puzzles_page.cpp
+msgid "Start"
+msgstr "Inizia"
+
+#. Under "No games in progress". At most three lines of about 65 letters.
+#: modes/profile_page.cpp
+msgid "Start a game and it waits for you here, on the console and on every other device you play on."
+msgstr "Inizia una partita e ti aspetterà qui, sulla console e su ogni altro dispositivo su cui giochi."
+
+#. The position before the first move, while stepping through the moves.
+#: modes/game_scene.cpp
+msgid "Starting position"
+msgstr "Posizione iniziale"
+
+#. A small label over the rating of the first puzzle of a run.
+#: modes/puzzles_page.cpp
+msgid "Starts at"
+msgstr "Si parte da"
+
+#. Under the token field: {0} is lip_, the letters every Lichess token begins with.
+#: modes/account_scene.cpp
+msgid "Starts with {0}"
+msgstr "Inizia con {0}"
+
+#. Button hint for L2 and R2: one move back or forward through the game. About 10 letters.
+#: modes/game_scene.cpp
+msgid "Step"
+msgstr "Scorri"
+
+#. The computer opponent; {0} is its strength, 1 to 8.
+#: modes/home_page.cpp, modes/play_page.cpp, modes/play_setup.cpp, modes/profile_page.cpp, modes/shell_scene.cpp
+msgid "Stockfish level {0}"
+msgstr "Stockfish livello {0}"
+
+#. Beside the choice Black. About 24 letters.
+#: modes/play_page.cpp
+msgid "Stockfish moves first"
+msgstr "Stockfish muove per primo"
+
+#. Under the Computer tab. About 35 letters.
+#: modes/play_page.cpp
+msgid "Stockfish plays on lichess.org"
+msgstr "Stockfish gioca su lichess.org"
+
+#. "Pass & Play" is the game for two players on this console: word it as in its own entry.
+#: modes/play_page.cpp
+msgid "Stockfish plays on lichess.org, which needs the internet connection. Pass & Play works without it."
+msgstr "Stockfish gioca su lichess.org, quindi serve la connessione a Internet. Passa e gioca funziona anche senza."
+
+#. Short for Puzzle Storm: a button that starts it, and the small heading of its card. About 10 letters.
+#: modes/home_page.cpp
+msgid "Storm"
+msgstr "Storm"
+
+#. Short for Puzzle Streak, on its card. About 10 letters.
+#: modes/home_page.cpp
+msgid "Streak"
+msgstr "Streak"
+
+#. The title when a Puzzle Streak run ended on a mistake.
+#: modes/puzzle_scene.cpp
+msgid "Streak over"
+msgstr "Serie terminata"
+
+#. Heading over the computer's level. About 18 letters.
+#: modes/play_page.cpp
+msgid "Strength"
+msgstr "Forza"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Super GM games" (puzzles from games of the world's best players). GM stays GM.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Super GM"
+msgstr "Partite di Super-GM"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Swallow's tail mate"
+msgstr "Matto della coda di rondine"
+
+#. Cross and Circle are the PS5 controller's buttons: name them as PlayStation does in this language.
+#: modes/settings_page.cpp
+msgid "Swap Cross and Circle"
+msgstr "Inverti Croce e Cerchio"
+
+#. Row of the game menu (Pass & Play): undo the last move.
+#: modes/game_scene.cpp
+msgid "Take back move"
+msgstr "Ritira la mossa"
+
+#. Action plate: ask the opponent to let the player take the last move back. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Takeback"
+msgstr "Ritira mossa"
+
+#. Action plate, in place of "Takeback" while the player's request waits for an answer. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Takeback asked"
+msgstr "Ritiro chiesto"
+
+#. Short message after the player asked to take a move back.
+#: modes/game_scene.cpp
+msgid "Takeback proposal sent"
+msgstr "Richiesta di ritiro mossa inviata"
+
+#. The state of the puzzle after a wrong move. At most 38 letters.
+#: modes/puzzle_scene.cpp
+msgid "That's not it. Try again"
+msgstr "Non è la mossa giusta. Riprova"
+
+#: modes/watch_page.cpp
+msgid "The best games being played on Lichess, move by move. Watching them needs the internet connection."
+msgstr "Le migliori partite in corso su Lichess, mossa dopo mossa. Per guardarle serve la connessione a Internet."
+
+#. Under the Lichess TV card. About 34 letters.
+#: modes/home_page.cpp
+msgid "The best games, live"
+msgstr "Le migliori partite, in diretta"
+
+#. A small label over the steps of a Puzzle Streak run: each solved puzzle is a step up.
+#: modes/puzzle_scene.cpp
+msgid "The climb"
+msgstr "La scalata"
+
+#. A small caption over the steps of a Puzzle Streak: each puzzle is rated 60 higher than the one before.
+#: modes/puzzles_page.cpp
+msgid "The climb · +60 rating a puzzle"
+msgstr "La scalata · +60 punti a problema"
+
+#. {0} is a file's name.
+#: modes/settings_page.cpp
+msgid "The full notices and licence texts ship with the source, in {0}."
+msgstr "Le note complete e i testi delle licenze sono inclusi nel codice sorgente, in {0}."
+
+#. Result card, how the game ended: a player did not make the first move.
+#: modes/game_scene.cpp
+msgid "The game did not start in time"
+msgstr "La partita non è iniziata in tempo"
+
+#. Why a game cannot be shown, when nothing more is known.
+#: modes/game_scene.cpp
+msgid "The game is not available."
+msgstr "La partita non è disponibile."
+
+#. Under the game menu's title.
+#: modes/game_scene.cpp
+msgid "The game is over"
+msgstr "La partita è terminata"
+
+#. Result card, how the game ended: called off before it began.
+#: modes/game_scene.cpp
+msgid "The game was aborted"
+msgstr "La partita è stata interrotta"
+
+#. Credits: what the project ps5-homebrew-ui is.
+#: modes/settings_page.cpp
+msgid "The interface kit this app is drawn with"
+msgstr "Il kit di interfaccia con cui è disegnata questa app"
+
+#. Why Puzzle Streak, Puzzle Storm and the themes cannot be played: the puzzles stored with the app could not be read. At most 45 letters.
+#: modes/puzzles_page.cpp, puzzles/pack_source.cpp
+msgid "The offline puzzle pack is missing"
+msgstr "Manca il pacchetto di problemi offline"
+
+#. Result card, how the game ended.
+#: modes/game_scene.cpp
+msgid "The opponent left the game"
+msgstr "L'avversario ha lasciato la partita"
+
+#. The state of the puzzle while the opponent's move is shown before the player's turn. At most 38 letters.
+#: modes/puzzle_scene.cpp
+msgid "The opponent moves first"
+msgstr "L'avversario muove per primo"
+
+#: modes/settings_page.cpp
+msgid "The picture's size, the frame counter and how much moves."
+msgstr "Dimensione dell'immagine, contatore dei fotogrammi e quantità di animazioni."
+
+#: modes/settings_page.cpp
+msgid "The piece set used everywhere."
+msgstr "Il set di pezzi usato ovunque."
+
+#: modes/settings_page.cpp
+msgid "The PS5 scales the picture to your TV."
+msgstr "La PS5 adatta l'immagine al tuo televisore."
+
+#: modes/puzzles_page.cpp
+msgid "The puzzle pack that ships with the app could not be read. Install the app again to restore it."
+msgstr "Impossibile leggere il pacchetto di problemi incluso nell'app. Reinstalla l'app per ripristinarlo."
+
+#: modes/update_scene.cpp
+msgid "The rest is on the app's page on homebrew.page."
+msgstr "Il resto è nella pagina dell'app su homebrew.page."
+
+#. Under the choice Rated. About 36 letters.
+#: modes/play_page.cpp
+msgid "The result changes your rating"
+msgstr "Il risultato modifica il tuo punteggio"
+
+#: modes/account_scene.cpp
+msgid "The sign-in link expired. Try again for a new one."
+msgstr "Il link di accesso è scaduto. Riprova per averne uno nuovo."
+
+#. The state of the puzzle while its solution is being played on the board.
+#: modes/puzzle_scene.cpp
+msgid "The solution"
+msgstr "La soluzione"
+
+#. Under the step Type. About 30 letters.
+#: modes/account_scene.cpp
+msgid "The token, here"
+msgstr "Il token, qui"
+
+#: modes/update_scene.cpp
+msgid "The update could not finish"
+msgstr "Impossibile completare l'aggiornamento"
+
+#: modes/update_scene.cpp
+msgid "The update helper could not start"
+msgstr "Impossibile avviare l'assistente di aggiornamento"
+
+#: modes/update_scene.cpp
+msgid "The update helper did not answer"
+msgstr "L'assistente di aggiornamento non ha risposto"
+
+#. Under the heading once the solution was shown (a line of moves). At most 50 letters.
+#: modes/puzzle_scene.cpp
+msgid "The winning line is on the board"
+msgstr "La variante vincente è sulla scacchiera"
+
+#. Over a game in which it is the opponent's turn. In capitals on screen, on one line or two: words of 8 letters at most.
+#: modes/game_scene.cpp, modes/profile_page.cpp
+msgid "Their move"
+msgstr "In attesa"
+
+#. Under a game's card: the opponent has the move.
+#: modes/home_page.cpp
+msgid "Their turn"
+msgstr "Tocca all'avversario"
+
+#. Under a game's card: {0} is the game's speed (Rapid, Correspondence...). About 34 letters with it.
+#: modes/home_page.cpp
+msgid "Their turn · {0}"
+msgstr "Tocca all'avversario · {0}"
+
+#. A small label over "1 of 74": which theme of the catalogue has the focus. About 10 letters.
+#: modes/puzzles_page.cpp
+msgid "Theme"
+msgstr "Tema"
+
+#. A tab of the Puzzles page (the catalogue of puzzle themes) and the label over a solved puzzle's themes. Keep it short (about 10 letters).
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Themes"
+msgstr "Temi"
+
+#. A small label over the marks of the puzzles of this Puzzle Storm run.
+#: modes/puzzle_scene.cpp
+msgid "This run"
+msgstr "Questo tentativo"
+
+#. One line under "Puzzle Storm". About 30 letters.
+#: modes/puzzle_scene.cpp
+msgid "Three minutes on the clock"
+msgstr "Tre minuti sull'orologio"
+
+#. Result card, how the game ended: the same position three times (a draw).
+#: modes/game_scene.cpp
+msgid "Threefold repetition"
+msgstr "Triplice ripetizione"
+
+#. Result card, how the game ended: a player's clock ran out.
+#: modes/game_scene.cpp
+msgid "Time out"
+msgstr "Tempo scaduto"
+
+#. Small heading over the time spent playing. In capitals on screen: about 14 letters.
+#: modes/profile_page.cpp
+msgid "Time played"
+msgstr "Tempo di gioco"
+
+#. The title when Puzzle Storm's clock ran out.
+#: modes/puzzle_scene.cpp
+msgid "Time's up"
+msgstr "Tempo scaduto"
+
+#. Credits: {0} is "OpenSSL Project". TLS and the licence's name stay.
+#: modes/settings_page.cpp
+msgid "TLS by the {0} (Apache-2.0)"
+msgstr "TLS di {0} (Apache-2.0)"
+
+#. Under White or Black: it is this side's turn. About 18 letters.
+#: modes/game_scene.cpp, modes/play_page.cpp
+msgid "To move"
+msgstr "Ha la mossa"
+
+#. A small label over "White" or "Black": the side that is to move in today's puzzle.
+#: modes/puzzles_page.cpp
+msgid "To play"
+msgstr "Muove"
+
+#. A small label beside the rating of today's puzzle on a scale. At most 8 letters.
+#: modes/puzzles_page.cpp
+msgid "Today"
+msgstr "Oggi"
+
+#. A small caption over a scale that shows today's puzzle's rating and the player's.
+#: modes/puzzles_page.cpp
+msgid "Today's puzzle and you"
+msgstr "Il problema di oggi e tu"
+
+#. One line under "Daily Puzzle" on the puzzle screen. About 40 letters.
+#: modes/puzzle_scene.cpp
+msgid "Today's puzzle on Lichess"
+msgstr "Il problema di oggi su Lichess"
+
+#. In the place of the facts about today's puzzle while it is being fetched.
+#: modes/puzzles_page.cpp
+msgid "Today's puzzle shows here once it is loaded"
+msgstr "Il problema di oggi appare qui dopo il caricamento"
+
+#. A small label over the rating of today's puzzle. About 19 letters.
+#: modes/puzzles_page.cpp
+msgid "Today's rating"
+msgstr "Punteggio di oggi"
+
+#. A Lichess TV channel: the best game being played. About 14 letters; use lichess.org's word.
+#: modes/home_page.cpp, modes/tv_feed.cpp
+msgid "Top rated"
+msgstr "Top Rated"
+
+#. Button: open puzzle training (endless puzzles at the player's level).
+#: modes/home_page.cpp
+msgid "Training"
+msgstr "Allenamento"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Trapped piece"
+msgstr "Pezzo intrappolato"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Triangle mate"
+msgstr "Matto triangolare"
+
+#. A button when no puzzle could be loaded. About 12 letters.
+#: modes/account_scene.cpp, modes/puzzle_scene.cpp, modes/update_scene.cpp
+msgid "Try again"
+msgstr "Riprova"
+
+#. Watch and Lichess TV: the channel's game is being fetched. Small capitals; about 16 letters.
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "Tuning in"
+msgstr "Sintonizzazione"
+
+#. A board's name: violet stone.
+#: board/board_view.hpp
+msgid "Twilight"
+msgstr "Crepuscolo"
+
+#. Under "Pass & Play". At most four lines of about 50 letters.
+#: modes/play_page.cpp
+msgid "Two players share one controller and take turns. The board turns to face whoever is to move, and the game is kept when you leave."
+msgstr "Due giocatori condividono un controller e giocano a turno. La scacchiera si gira verso chi deve muovere, e la partita viene conservata quando esci."
+
+#. Under the Friend tab. About 35 letters.
+#: modes/play_page.cpp
+msgid "Two players, no account needed"
+msgstr "Due giocatori, senza account"
+
+#. Under the Pass & Play card. About 34 letters.
+#: modes/game_scene.cpp, modes/home_page.cpp
+msgid "Two players, one controller"
+msgstr "Due giocatori, un controller"
+
+#. Button hint on the token keyboard: type the highlighted key.
+#: modes/account_scene.cpp
+msgid "Type"
+msgstr "Digita"
+
+#. Second step of signing in with a token: type it. About 16 letters.
+#: modes/account_scene.cpp
+msgctxt "step"
+msgid "Type"
+msgstr "Digita"
+
+#. Credits: {0} is a person or a group. Keep the licence's name in brackets.
+#: modes/settings_page.cpp
+msgid "Typeface by {0} (SIL OFL 1.1)"
+msgstr "Font di {0} (SIL OFL 1.1)"
+
+#. Credits: {0} and {1} are names. Keep the licence's name in brackets.
+#: modes/settings_page.cpp
+msgid "Typeface by {0} and {1} (Bitstream Vera)"
+msgstr "Font di {0} e {1} (Bitstream Vera)"
+
+#. The name of a speed of play, as lichess.org writes it in this language.
+#: lichess/board_link.cpp, modes/game_scene.cpp
+msgid "UltraBullet"
+msgstr "UltraBullet"
+
+#. Under the channel Bullet: how long a player has. About 25 letters.
+#: modes/tv_feed.cpp
+msgid "Under 3 minutes"
+msgstr "Meno di 3 minuti"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Underpromotion" (a pawn becomes a knight, a bishop or a rook).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Under promotion"
+msgstr "Sottopromozione"
+
+#. Pass & Play, action plate: take the last move back. About 14 letters.
+#: modes/game_scene.cpp
+msgid "Undo"
+msgstr "Ritira mossa"
+
+#. About: shown in place of the version when it is not known.
+#: modes/settings_page.cpp
+msgid "Unknown"
+msgstr "Sconosciuta"
+
+#. A time control: a game against the computer without a clock. A large figure on a tile: one word.
+#: modes/play_setup.cpp, modes/start_game_scene.cpp
+msgid "Unlimited"
+msgstr "Illimitato"
+
+#. Under "No puzzle to show": Lichess sent something that is not a puzzle.
+#: lichess/puzzle_sources.cpp
+msgid "unreadable puzzle"
+msgstr "problema illeggibile"
+
+#. Under "No puzzle to show": the game a puzzle was taken from could not be read.
+#: puzzles/puzzle.cpp
+msgid "unreadable puzzle game"
+msgstr "partita del problema illeggibile"
+
+#. Title of the announcement that a newer version of the app exists.
+#: app/app.cpp, modes/update_scene.cpp
+msgid "Update available"
+msgstr "Aggiornamento disponibile"
+
+#: modes/update_scene.cpp
+msgid "Update now"
+msgstr "Aggiorna ora"
+
+#: modes/update_scene.cpp
+msgid "Update ready"
+msgstr "Aggiornamento pronto"
+
+#. Button hint: sign in by typing a personal token instead of scanning the code.
+#: modes/account_scene.cpp
+msgid "Use a token"
+msgstr "Usa un token"
+
+#. Button: sign in by typing a personal token. About 40 letters.
+#: modes/account_scene.cpp
+msgid "Use a token instead"
+msgstr "Usa invece un token"
+
+#. Under the label "Skip": the run's one skip has been used.
+#: modes/puzzle_scene.cpp
+msgid "Used"
+msgstr "Usato"
+
+#. About: before the app's version number.
+#: modes/settings_page.cpp
+msgid "Version"
+msgstr "Versione"
+
+#: modes/update_scene.cpp
+msgid "Version {0}"
+msgstr "Versione {0}"
+
+#. {0} is a version number such as 01.000.010; homebrew.page is the web site that has it.
+#: app/app.cpp
+msgid "Version {0} is on homebrew.page"
+msgstr "La versione {0} è su homebrew.page"
+
+#: modes/update_scene.cpp
+msgid "Version {0} is ready to install."
+msgstr "La versione {0} è pronta per l'installazione."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag. On Lichess: "Very long puzzle" (four moves or more to find).
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Very long"
+msgstr "Problema lunghissimo"
+
+#: modes/settings_page.cpp
+msgid "Vibration"
+msgstr "Vibrazione"
+
+#. Settings: under the picture of the controller. About 30 letters.
+#: modes/settings_page.cpp
+msgid "Vibration off"
+msgstr "Vibrazione disattivata"
+
+#. Settings: under the picture of the controller. About 30 letters.
+#: modes/settings_page.cpp
+msgid "Vibration on"
+msgstr "Vibrazione attivata"
+
+#. Result card, the large title: the player won. One or two words.
+#: modes/game_scene.cpp
+msgid "Victory"
+msgstr "Vittoria"
+
+#. A shortcut button: show the puzzle's solution. About 18 letters.
+#: modes/puzzle_scene.cpp
+msgid "View solution"
+msgstr "Vedi la soluzione"
+
+#. Settings, Sound: the heading over the three volumes.
+#: modes/settings_page.cpp
+msgid "Volume"
+msgstr "Volume"
+
+#. A game's title: {0} is the opponent's name, or "Stockfish level 3". "vs" is short for versus.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/profile_page.cpp, modes/shell_scene.cpp
+msgid "vs {0}"
+msgstr "vs {0}"
+
+#. Second line of the menu's card when several games wait: {0} is the opponent of the first one.
+#: modes/shell_scene.cpp
+msgid "vs {0} and more"
+msgstr "vs {0} e altri"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Vukovic mate"
+msgstr "Scacco matto Vukovic"
+
+#. Under White or Black: this side waits for the other to move. About 18 letters.
+#: modes/home_page.cpp, modes/play_page.cpp
+msgid "Waiting"
+msgstr "In attesa"
+
+#. Pass & Play, under a player's name: it is the other player's turn.
+#: modes/game_scene.cpp
+msgctxt "player"
+msgid "Waiting"
+msgstr "In attesa"
+
+#. Small label in capitals over the time spent waiting for a game ("WAITING 0:42").
+#: modes/start_game_scene.cpp
+msgctxt "timer"
+msgid "Waiting"
+msgstr "In attesa"
+
+#. In the empty list of moves of an online game.
+#: modes/game_scene.cpp
+msgid "Waiting for the first move"
+msgstr "In attesa della prima mossa"
+
+#. Over the time left to scan the code. In capitals on screen: about 30 letters.
+#: modes/account_scene.cpp
+msgid "Waiting for your phone"
+msgstr "In attesa del telefono"
+
+#. Waiting screen, what is happening: a correspondence game was offered and waits for someone to take it. About 22 letters.
+#: modes/start_game_scene.cpp
+msgid "Waiting in the lobby"
+msgstr "In attesa nella lobby"
+
+#. A board's name: a wooden board, dark brown.
+#: board/board_view.hpp
+msgid "Walnut"
+msgstr "Noce"
+
+#. The Watch page's name (Lichess TV), and the button hint that opens the game on the full screen. One word for both.
+#: modes/shell_scene.cpp, modes/watch_page.cpp
+msgid "Watch"
+msgstr "Guarda"
+
+#. Watch: what the Cross button does, on a plate. About 24 letters.
+#: modes/watch_page.cpp
+msgid "Watch full screen"
+msgstr "Guarda a schermo intero"
+
+#: modes/tv_scene.cpp
+msgid "Watching games needs the internet connection. The game appears here as soon as it is back."
+msgstr "Per guardare le partite serve la connessione a Internet. La partita apparirà qui appena torna."
+
+#: modes/settings_page.cpp
+msgid "What this app is, where its games come from and whose work it uses."
+msgstr "Cos'è questa app, da dove vengono le partite e di chi è il lavoro che usa."
+
+#: modes/update_scene.cpp
+msgid "What's new"
+msgstr "Novità"
+
+#: modes/update_scene.cpp
+msgid "What's new in version {0}"
+msgstr "Novità della versione {0}"
+
+#: modes/settings_page.cpp
+msgid "Which button confirms, and whether the controller rumbles."
+msgstr "Quale tasto conferma e se il controller vibra."
+
+#. The side with the white pieces: under a player's name, and beside "Last move" for who played it.
+#: modes/play_page.cpp, modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "White"
+msgstr "Bianco"
+
+#. The side that has the white pieces: the name of a Pass & Play player, the head of the column of White's moves, and the {0} of a player's note ("White · your move").
+#: modes/game_scene.cpp, modes/game_widgets.cpp
+msgctxt "side"
+msgid "White"
+msgstr "Bianco"
+
+#. The side to move in today's puzzle, under the label "To play".
+#: modes/puzzles_page.cpp
+msgctxt "to play"
+msgid "White"
+msgstr "Bianco"
+
+#. Pass & Play, state line: White's king is in check.
+#: modes/game_scene.cpp
+msgid "White is in check"
+msgstr "Il Bianco è sotto scacco"
+
+#. In the empty list of moves of a Pass & Play game.
+#: modes/game_scene.cpp
+msgid "White moves first"
+msgstr "Il Bianco muove per primo"
+
+#. Result card, how the game ended.
+#: modes/game_scene.cpp
+msgid "White resigned"
+msgstr "Il Bianco ha abbandonato"
+
+#. It is White's move. On the puzzle screen a short line at the top of a Puzzle Streak or Puzzle Storm run: at most 20 letters.
+#: modes/game_scene.cpp, modes/puzzle_scene.cpp
+msgid "White to move"
+msgstr "Tocca al Bianco"
+
+#. The large heading of a puzzle: it is White's move. About 19 letters (24 are shrunk to fit).
+#: modes/home_page.cpp, modes/puzzle_scene.cpp
+msgid "White to play"
+msgstr "Muove il Bianco"
+
+#. Pass & Play, the large title of the result card and the state line.
+#: modes/game_scene.cpp
+msgid "White wins"
+msgstr "Vince il Bianco"
+
+#. Under the material bar: {0} is what White's pieces are worth, in pawns ("White 38").
+#: modes/tv_scene.cpp, modes/watch_page.cpp
+msgid "White {0}"
+msgstr "Bianco {0}"
+
+#. Lichess TV, under a player's name: this player has the white pieces and it is their turn.
+#: modes/tv_scene.cpp
+msgid "White · to move"
+msgstr "Bianco · ha la mossa"
+
+#. Under the step Scan. About 30 letters.
+#: modes/account_scene.cpp
+msgid "With your phone"
+msgstr "Con il telefono"
+
+#. Beside or under a player's name once the game is over: this player won. One short word (about 10 letters).
+#: modes/game_scene.cpp
+msgid "Won"
+msgstr "Ha vinto"
+
+#. Under a percentage in the middle of a ring: the share of games the player won. In capitals on screen: about 6 letters.
+#: modes/profile_page.cpp
+msgctxt "share of games"
+msgid "Won"
+msgstr "Vinte"
+
+#: modes/settings_page.cpp
+msgid "Wood, marble or flat colours."
+msgstr "Legno, marmo o tinte unite."
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "X-ray attack"
+msgstr "Attacco a raggi X"
+
+#. A small label beside the player's rating on a scale. At most 8 letters.
+#: modes/puzzles_page.cpp
+msgid "You"
+msgstr "Tu"
+
+#. Game screen, state line: the player's king is in check.
+#: modes/game_scene.cpp
+msgid "You are in check"
+msgstr "Sei sotto scacco"
+
+#. Large title of at most two lines, each of about 20 letters.
+#: modes/play_page.cpp
+msgid "You are offline"
+msgstr "Sei offline"
+
+#. On the web page the phone shows when signing in worked.
+#: modes/account_scene.cpp
+msgid "You can put your phone away and return to your PS5."
+msgstr "Puoi mettere via il telefono e tornare alla tua PS5."
+
+#: puzzles/pack_source.cpp
+msgid "You have solved every puzzle here"
+msgstr "Hai risolto tutti i problemi qui"
+
+#. Beside the choice White. About 24 letters.
+#: modes/play_page.cpp
+msgid "You move first"
+msgstr "La prima mossa è tua"
+
+#. After the speed and a dot, in lower case: "Rapid · you play Black".
+#: modes/play_page.cpp
+msgid "you play Black"
+msgstr "giochi con il Nero"
+
+#. After the speed and a dot, in lower case: "Rapid · you play White".
+#: modes/play_page.cpp
+msgid "you play White"
+msgstr "giochi con il Bianco"
+
+#: modes/update_scene.cpp
+msgid "Your account, games and settings are kept."
+msgstr "Account, partite e impostazioni vengono conservati."
+
+#. Heading over the player's rating at this speed. In capitals on screen. About 28 letters.
+#: modes/play_page.cpp
+msgid "Your blitz rating"
+msgstr "Il tuo punteggio blitz"
+
+#. Heading over the player's rating at this speed. In capitals on screen. About 28 letters.
+#: modes/play_page.cpp
+msgid "Your bullet rating"
+msgstr "Il tuo punteggio bullet"
+
+#. Heading over the player's rating at this speed. In capitals on screen. About 28 letters.
+#: modes/play_page.cpp
+msgid "Your classical rating"
+msgstr "Il tuo punteggio classical"
+
+#. Under the game menu's title: the menu does not pause an online game.
+#: modes/game_scene.cpp
+msgid "Your clock keeps running while you are here"
+msgstr "Il tuo orologio continua a scorrere mentre sei qui"
+
+#. Heading over the choice of side against the computer. About 24 letters.
+#: modes/play_page.cpp
+msgid "Your colour"
+msgstr "Il tuo colore"
+
+#. Heading over the player's rating at this speed. In capitals on screen. About 28 letters.
+#: modes/play_page.cpp
+msgid "Your correspondence rating"
+msgstr "Punteggio per corrispondenza"
+
+#. Under "No rating yet": "it" is the rating. One line of about 45 letters.
+#: modes/play_page.cpp
+msgid "Your first games at this speed set it."
+msgstr "Lo stabiliscono le prime partite a questa cadenza."
+
+#. Small heading on the card of one of the player's online games. About 10 letters.
+#: modes/home_page.cpp
+msgid "Your game"
+msgstr "La tua partita"
+
+#. Under the Pass & Play card. About 34 letters.
+#: modes/home_page.cpp
+msgid "Your game is saved"
+msgstr "La tua partita è salvata"
+
+#. The state of the puzzle: the player is to move.
+#: modes/game_scene.cpp, modes/home_page.cpp, modes/profile_page.cpp, modes/puzzle_scene.cpp, modes/shell_scene.cpp
+msgid "Your move"
+msgstr "Tocca a te"
+
+#. Title of the card that asks the player to answer: the opponent wants to take their last move back.
+#: modes/game_scene.cpp
+msgid "Your opponent asks for a takeback"
+msgstr "Il tuo avversario chiede di ritirare la mossa"
+
+#. Short message. "Claim victory" is a row of the game menu: use the same words.
+#: modes/game_scene.cpp
+msgid "Your opponent left. Claim victory from the menu."
+msgstr "Il tuo avversario se n'è andato. Reclama la vittoria dal menu."
+
+#. Title of the card that asks the player to answer.
+#: modes/game_scene.cpp
+msgid "Your opponent offers a draw"
+msgstr "Il tuo avversario offre patta"
+
+#. While waiting; no full stop at the end.
+#: modes/account_scene.cpp
+msgid "Your phone approved it. Fetching your account"
+msgstr "Il telefono ha approvato. Recupero del tuo account"
+
+#. "Signed in" is the start of what the phone shows ("Signed in to ProsperoLichess"): word the two alike.
+#: modes/account_scene.cpp
+msgid "Your phone shows \"Signed in\" and ProsperoLichess continues by itself."
+msgstr "Il telefono mostra \"Accesso effettuato\" e ProsperoLichess prosegue da solo."
+
+#. A small label in capitals over the player's puzzle rating. About 21 letters (27 are shrunk to fit).
+#: modes/puzzles_page.cpp
+msgid "Your puzzle rating"
+msgstr "Il tuo punteggio problemi"
+
+#. Heading over the player's rating at this speed. In capitals on screen. About 28 letters.
+#: modes/play_page.cpp
+msgid "Your rapid rating"
+msgstr "Il tuo punteggio rapid"
+
+#. A small label over the player's puzzle rating. About 15 letters.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "Your rating"
+msgstr "Il tuo punteggio"
+
+#. Under an empty figure, for a signed-in player without a puzzle rating. About 30 letters (two short lines at most).
+#: modes/puzzles_page.cpp
+msgid "Your rating is not known yet"
+msgstr "Il tuo punteggio non è ancora noto"
+
+#. A small caption over a line chart of the player's puzzle rating.
+#: modes/puzzles_page.cpp
+msgid "Your rating over time"
+msgstr "Il tuo punteggio nel tempo"
+
+#. "Profile" is a page's name: word it as in its own entry.
+#: modes/account_scene.cpp
+msgid "Your ratings and your games in progress are on the Profile page, and signing out is there too."
+msgstr "I tuoi punteggi e le tue partite in corso sono nella pagina Profilo, e da lì puoi anche uscire."
+
+#. Under a game's card: the player has the move.
+#: modes/home_page.cpp
+msgid "Your turn"
+msgstr "Tocca a te"
+
+#. Under a game's card: {0} is the game's speed (Rapid, Correspondence...). About 34 letters with it.
+#: modes/home_page.cpp
+msgid "Your turn · {0}"
+msgstr "Tocca a te · {0}"
+
+#. Puzzle theme, named as on lichess.org (lichess.org/training/themes): use the name Lichess shows in your language. It stands on a card (about 17 letters fit one line, a longer name takes two smaller lines) and on a small tag.
+#: puzzles/pack.cpp
+msgctxt "puzzle theme"
+msgid "Zugzwang"
+msgstr "Zugzwang"
+
+#. Credits: {0}, {1} and {2} are piece sets' names. Keep the licences' names in brackets.
+#: modes/settings_page.cpp
+msgid "{0} and {1} (GPLv2+), {2} (Apache-2.0)"
+msgstr "{0} e {1} (GPLv2+), {2} (Apache-2.0)"
+
+#. {0} is a player's name: that player invites you to a game.
+#: lichess/session.cpp
+msgid "{0} challenges you"
+msgstr "{0} ti sfida"
+
+#. Under the token field, after a dot; {0} is 1.
+#: modes/account_scene.cpp
+msgid "{0} character typed"
+msgstr "{0} carattere digitato"
+
+#. Under the token field, after a dot; {0} is a number.
+#: modes/account_scene.cpp
+msgid "{0} characters typed"
+msgstr "{0} caratteri digitati"
+
+#. A correspondence time control, as a large figure on a tile: "1 day". Very short.
+#: lichess/board_link.cpp, modes/play_setup.cpp, modes/start_game_scene.cpp
+msgid "{0} day"
+msgstr "{0} giorno"
+
+#. The chosen correspondence time control in words; {0} is 1.
+#: modes/play_setup.cpp
+msgid "{0} day for every move"
+msgstr "{0} giorno per ogni mossa"
+
+#. A correspondence time control, as a large figure on a tile: "3 days". {0} is 2 or more. Very short.
+#: lichess/board_link.cpp, modes/play_setup.cpp, modes/start_game_scene.cpp
+msgid "{0} days"
+msgstr "{0} giorni"
+
+#. The chosen correspondence time control in words; {0} is 2 or more.
+#: modes/play_setup.cpp
+msgid "{0} days for every move"
+msgstr "{0} giorni per ogni mossa"
+
+#. The profile's legend when the count is exactly 1.
+#: modes/profile_page.cpp
+msgctxt "of one game"
+msgid "{0} drawn"
+msgstr "{0} patta"
+
+#. Legend of the results: {0} is a number of games ("243 drawn"). Lower case, the word about 7 letters. For an account without games the line stands without {0}.
+#: modes/profile_page.cpp
+msgid "{0} drawn"
+msgstr "{0} patte"
+
+#. Credits: {0} is "OpenGL 4.6", {1} is the project "Mesa".
+#: modes/settings_page.cpp
+msgid "{0} for PS5, built on {1}"
+msgstr "{0} per PS5, basato su {1}"
+
+#. How many games a rating rests on; {0} is 1.
+#: modes/play_page.cpp, modes/profile_page.cpp
+msgid "{0} game"
+msgstr "{0} partita"
+
+#. Title of the menu's card: {0} is 1, the number of games in which it is the player's turn. About 16 letters.
+#: modes/shell_scene.cpp
+msgid "{0} game waits"
+msgstr "{0} partita ti aspetta"
+
+#. How many games a rating rests on; {0} is a number such as 412 or 1,204. About 14 characters.
+#: modes/play_page.cpp, modes/profile_page.cpp
+msgid "{0} games"
+msgstr "{0} partite"
+
+#. Title of the menu's card: {0} is the number of games (2 or more) in which it is the player's turn. About 16 letters.
+#: modes/shell_scene.cpp
+msgid "{0} games wait"
+msgstr "{0} partite ti aspettano"
+
+#. Time left to move: {0} is a clock such as 5:07 (minutes and seconds).
+#: modes/home_page.cpp
+msgctxt "time"
+msgid "{0} left"
+msgstr "Ancora {0}"
+
+#. What a game's clock still holds: {0} is minutes and seconds, such as 12:05. About 11 characters.
+#: modes/profile_page.cpp
+msgid "{0} left"
+msgstr "Ancora {0}"
+
+#. The profile's legend when the count is exactly 1.
+#: modes/profile_page.cpp
+msgctxt "of one game"
+msgid "{0} lost"
+msgstr "{0} persa"
+
+#. Legend of the results: {0} is a number of games ("1,122 lost"). Lower case, the word about 7 letters. For an account without games the line stands without {0}.
+#: modes/profile_page.cpp
+msgid "{0} lost"
+msgstr "{0} perse"
+
+#. The chosen time control in words: each player has {0} minutes (5 or more).
+#: modes/play_setup.cpp
+msgid "{0} minutes each"
+msgstr "{0} minuti a testa"
+
+#. The chosen time control in words: each player has {0} minutes (5 or more), and {1} seconds are added after each move. About 40 characters.
+#: modes/play_setup.cpp
+msgid "{0} minutes each, +{1} s per move"
+msgstr "{0} minuti a testa, +{1} s a mossa"
+
+#. The summary of a Puzzle Storm run with exactly one mistake: {0} is the number of mistakes, {1} the longest row of solved puzzles.
+#: modes/puzzle_scene.cpp
+msgid "{0} mistake · best combo {1}"
+msgstr "{0} errore · miglior combo {1}"
+
+#. The summary of a Puzzle Storm run: {0} is the number of mistakes, {1} the longest row of solved puzzles.
+#: modes/puzzle_scene.cpp
+msgid "{0} mistakes · best combo {1}"
+msgstr "{0} errori · miglior combo {1}"
+
+#. Lichess TV: how many moves were played while watching, when it is one.
+#: modes/game_scene.cpp, modes/tv_scene.cpp
+msgid "{0} move"
+msgstr "{0} mossa"
+
+#. Lichess TV: how many moves were played while watching.
+#: modes/game_scene.cpp, modes/tv_scene.cpp
+msgid "{0} moves"
+msgstr "{0} mosse"
+
+#. The place of the focused theme in the catalogue: {0} is its number, {1} how many there are ("1 of 74").
+#: modes/puzzles_page.cpp
+msgid "{0} of {1}"
+msgstr "{0} di {1}"
+
+#. How many puzzles a theme has, for exactly one; {0} is the number.
+#: modes/puzzles_page.cpp
+msgid "{0} puzzle"
+msgstr "{0} problema"
+
+#. How many puzzles a theme has; {0} is the number ("12,164"). About 20 letters.
+#: modes/puzzles_page.cpp
+msgid "{0} puzzles"
+msgstr "{0} problemi"
+
+#. Under the puzzle rating: {0} is the number of puzzles solved ("1,960 solved"). Word it so that it reads well with any number.
+#: modes/profile_page.cpp
+msgid "{0} solved"
+msgstr "Risolti: {0}"
+
+#. The puzzles of a Puzzle Storm run so far: {0} solved, {1} not solved ("4 solved · 1 missed"). Shown in small capitals.
+#: modes/puzzle_scene.cpp
+msgid "{0} solved · {1} missed"
+msgstr "Risolti: {0} · Sbagliati: {1}"
+
+#. {0} and {1} are the names of the two players of a game.
+#: modes/home_page.cpp
+msgid "{0} vs {1}"
+msgstr "{0} vs {1}"
+
+#. The profile's legend when the count is exactly 1. The same as the text without this context if the language needs no other form.
+#: modes/profile_page.cpp
+msgctxt "of one game"
+msgid "{0} won"
+msgstr "{0} vinta"
+
+#. Legend of the results: {0} is a number of games ("1,301 won"). Lower case, the word about 7 letters. For an account without games the line stands without {0}.
+#: modes/profile_page.cpp
+msgid "{0} won"
+msgstr "{0} vinte"
+
+#. What a search is for: {0} is the speed (Rapid), {1} the time control (10+5). Change the order if the language asks for it.
+#: lichess/board_link.cpp, modes/play_setup.cpp
+msgctxt "speed, time control"
+msgid "{0} {1}"
+msgstr "{0} {1}"
+
+#. Under a player's name once the game is over: the game was drawn. {0} is their side.
+#: modes/game_scene.cpp
+msgid "{0} · draw"
+msgstr "{0} · patta"
+
+#. Under a player's name: their king is in check. {0} is their side ("White", "Black", or "Black · level 3" for the computer).
+#: modes/game_scene.cpp
+msgid "{0} · in check"
+msgstr "{0} · sotto scacco"
+
+#. Under the opponent's name: they left, and the game menu now has "Claim victory". {0} is their side. About 40 letters.
+#: modes/game_scene.cpp
+msgid "{0} · left, claim the win in the menu"
+msgstr "{0} · uscito, reclama la vittoria dal menu"
+
+#. Under the opponent's name: they left the game. {0} is their side, {1} the seconds until the player may claim the win. About 40 letters.
+#: modes/game_scene.cpp
+msgid "{0} · left, claim the win in {1} s"
+msgstr "{0} · uscito, reclama la vittoria tra {1} s"
+
+#. Under the computer's name (Stockfish). {0} is its side ("White", "Black"), {1} its strength, 1 to 8.
+#: modes/game_scene.cpp
+msgid "{0} · level {1}"
+msgstr "{0} · livello {1}"
+
+#. The puzzle before the one on the board, which the player skipped: {0} is its theme, {1} its rating. Shown in small capitals.
+#: modes/puzzle_scene.cpp
+msgid "{0} · rated {1} · skipped"
+msgstr "{0} · punteggio {1} · saltato"
+
+#. The puzzle before the one on the board: {0} is its theme, {1} its rating, {2} the seconds it took ("Fork · rated 888 · solved in 1 s"). Shown in small capitals.
+#: modes/puzzle_scene.cpp
+msgid "{0} · rated {1} · solved in {2} s"
+msgstr "{0} · punteggio {1} · risolto in {2} s"
+
+#. The puzzle before the one on the board, which the player got wrong: {0} is its theme, {1} its rating. Shown in small capitals.
+#: modes/puzzle_scene.cpp
+msgid "{0} · rated {1} · wrong move"
+msgstr "{0} · punteggio {1} · mossa sbagliata"
+
+#. Under the player's own name while the connection to the game is being made again. {0} is their side.
+#: modes/game_scene.cpp
+msgid "{0} · reconnecting…"
+msgstr "{0} · riconnessione…"
+
+#. Under the opponent's name: it is their turn. {0} is their side ("White", "Black", or "Black · level 3" for the computer).
+#: modes/game_scene.cpp
+msgid "{0} · thinking"
+msgstr "{0} · sta pensando"
+
+#. Under a player's name once the game is over: this player won. {0} is their side.
+#: modes/game_scene.cpp
+msgid "{0} · won"
+msgstr "{0} · ha vinto"
+
+#. Under the player's own name. {0} is their side ("White", "Black"). Keep the dot.
+#: modes/game_scene.cpp
+msgid "{0} · your move"
+msgstr "{0} · tocca a te"
+
+#. Under the screen's name: {0} is the puzzle theme, {1} the difficulty ("Fork · Normal").
+#: modes/puzzle_scene.cpp
+msgid "{0} · {1}"
+msgstr "{0} · {1}"
+
+#. A share of a hundred; {0} is the number. Put the sign and any space where the language has them (49%, 49 %, %49).
+#: core/strings.cpp
+msgid "{0}%"
+msgstr "{0}%"
+
+#. Time spent playing: {0} days and {1} hours, each unit as one letter. A large figure: about 8 characters.
+#: modes/profile_page.cpp
+msgid "{0}d {1}h"
+msgstr "{0}g {1}h"
+
+#. What a game's clock still holds: {0} days and {1} hours, each unit as one letter. About 11 characters.
+#: modes/home_page.cpp, modes/profile_page.cpp
+msgid "{0}d {1}h left"
+msgstr "Ancora {0}g {1}h"
+
+#. Time spent playing: {0} hours and {1} minutes, each unit as one letter. A large figure: about 8 characters.
+#: modes/profile_page.cpp
+msgid "{0}h {1}m"
+msgstr "{0}h {1}m"
+
+#. What a game's clock still holds: {0} hours and {1} minutes, each unit as one letter. About 11 characters.
+#: modes/home_page.cpp, modes/profile_page.cpp
+msgid "{0}h {1}m left"
+msgstr "Ancora {0}h {1}m"
+
+#. Time spent playing: {0} minutes, the unit as one letter.
+#: modes/profile_page.cpp
+msgid "{0}m"
+msgstr "{0}m"
+
+#. Seconds taken off the clock; {0} is the number, s stands for seconds ("–10 s"). Keep it short.
+#: modes/puzzle_scene.cpp, modes/puzzles_page.cpp
+msgid "–{0} s"
+msgstr "–{0} s"

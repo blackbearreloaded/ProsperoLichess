@@ -1,0 +1,34 @@
+# ProsperoLichess - Hardware settings run 2 of 2: what run 1 changed is still there after a restart.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# The same storage as settings.txt, kept. It only looks.
+guest
+wait 300
+mark home
+press menu
+nav down
+nav down
+nav down
+nav down
+nav down
+wait 60
+press confirm
+wait 40
+mark board-kept
+nav down
+wait 60
+mark play-kept
+nav down
+wait 60
+mark sound-kept
+nav down
+wait 60
+mark controller-kept
+nav down
+wait 60
+mark display-kept
+press back
+wait 60
+mark end
+wait 600
+quit

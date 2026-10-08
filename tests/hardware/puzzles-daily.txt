@@ -1,0 +1,57 @@
+# ProsperoLichess - Hardware puzzles, online: the Daily Puzzle with hints and its solution, then Puzzle Training (not signed in, so nothing is rated).
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Needs the console to reach lichess.org. Storage of its own, emptied first.
+guest
+fresh
+wait 420
+press menu
+nav down
+wait 60
+press confirm
+wait 30
+mark puzzles
+press confirm
+wait 300
+mark daily
+# Triangle hints twice: the piece, then the square.
+press north
+wait 60
+mark daily-hint
+press north
+wait 60
+mark daily-hint-square
+# Square plays the solution.
+press west
+wait 540
+mark daily-solution
+press menu
+wait 40
+nav up
+wait 10
+press confirm
+wait 90
+# Puzzle Training is the second tile.
+nav right
+wait 60
+mark training-tile
+press confirm
+wait 420
+mark training
+press west
+wait 540
+mark training-solution
+# Cross goes on to the next puzzle.
+press confirm
+wait 300
+mark training-next
+press menu
+wait 40
+nav up
+wait 10
+press confirm
+wait 90
+mark puzzles-after
+mark end
+wait 600
+quit

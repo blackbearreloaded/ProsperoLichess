@@ -1,0 +1,52 @@
+# ProsperoLichess - Hardware saved game, run 1 of 2: three moves of Pass & Play, then the app ends.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Storage of its own, emptied first. resume-b.txt finds the game again.
+guest
+fresh
+wait 300
+press menu
+nav down
+nav down
+wait 60
+press confirm
+wait 30
+press page_next
+wait 20
+press page_next
+wait 60
+nav down
+wait 20
+press confirm
+wait 90
+# e2e4 (White)
+press confirm
+nav up
+nav up
+press confirm
+wait 60
+# e7e5 (Black)
+nav left
+nav down
+nav down
+press confirm
+nav up
+nav up
+press confirm
+wait 60
+# g1f3 (White)
+nav right
+nav right
+nav right
+nav down
+nav down
+nav down
+press confirm
+nav left
+nav up
+nav up
+press confirm
+wait 60
+mark three-moves
+wait 60
+quit

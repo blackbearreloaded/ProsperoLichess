@@ -1,0 +1,10 @@
+# The signed-update dialog stays until the player chooses an action.
+guest
+fresh
+wait 420
+mark home
+update 01.000.010
+wait 120
+mark update-shown
+wait 60
+quit

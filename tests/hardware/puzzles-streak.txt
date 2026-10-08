@@ -1,0 +1,43 @@
+# ProsperoLichess - Hardware puzzles, offline: Puzzle Streak with a hint, the skip, and a move played blind (most likely wrong, which ends the run).
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Storage of its own, kept from puzzles-daily.txt so the counts add up.
+# A blind move: R1 picks a piece, Cross lifts it, R1 picks a square, Cross drops it.
+guest
+wait 300
+press menu
+nav down
+wait 60
+press confirm
+wait 30
+nav right
+nav right
+wait 60
+mark streak-tile
+press confirm
+wait 200
+mark streak
+press north
+wait 60
+mark streak-hint
+press west
+wait 200
+mark streak-skipped
+press page_next
+wait 8
+press confirm
+wait 8
+press page_next
+wait 8
+press confirm
+wait 240
+mark streak-after-move
+# If the run is over its card is open: the second answer leaves.
+nav right
+wait 10
+press confirm
+wait 120
+mark streak-left
+mark end
+wait 600
+quit

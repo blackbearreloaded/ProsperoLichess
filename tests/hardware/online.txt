@@ -1,0 +1,115 @@
+# ProsperoLichess - Hardware online tour: the Daily Puzzle from the home screen, Lichess TV and its channels, and the sign-in screen up to a refused token.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Needs the console to reach lichess.org. Storage of its own, emptied first:
+# nothing is signed in and nothing is played. The token typed at the end is
+# made up, so Lichess refuses it.
+guest
+fresh
+wait 420
+mark home
+# The Home hero offers the Daily Puzzle when Lichess answers.
+press confirm
+wait 300
+mark daily
+press menu
+wait 40
+nav up
+wait 10
+press confirm
+wait 90
+# Watch is the rail's fourth entry: the game on air, then its channels.
+press menu
+nav down
+nav down
+nav down
+wait 60
+press confirm
+wait 480
+mark watch
+nav down
+wait 300
+mark watch-blitz
+nav down
+wait 300
+mark watch-rapid
+# Cross watches full screen; R1 changes channel, Square turns the board.
+press confirm
+wait 600
+mark tv
+press page_next
+wait 600
+mark tv-next-channel
+press west
+wait 60
+mark tv-flipped
+wait 900
+mark tv-later
+press back
+wait 90
+# Profile is the next entry: signed out, its button opens the sign-in screen.
+press menu
+nav down
+wait 60
+press confirm
+wait 60
+mark profile
+press confirm
+wait 360
+mark signin-qr
+# Cross changes to a personal token; a few characters, then Options sends it.
+press confirm
+wait 90
+mark signin-token
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+press confirm
+nav right
+wait 30
+mark signin-typed
+press menu
+wait 360
+mark signin-refused
+press back
+wait 60
+press back
+wait 90
+mark end
+wait 600
+quit

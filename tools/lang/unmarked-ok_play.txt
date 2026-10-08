@@ -1,0 +1,13 @@
+# Values the Play page, the Profile page and the sign-in screen put on
+# screen and do not translate, for "tools/strings.py unmarked": one regular
+# expression a line, as in unmarked-ok.txt.
+
+# How a Lichess token begins, in the token field's helper and its placeholder.
+lip_(?:\.\.\.)?
+# One character alone: a key of the token keyboard (a token is made of these
+# letters in every language), or the initial in a player's avatar.
+^[A-Za-z]$
+# The names of the shoulder buttons, drawn on their glyphs in the hint row.
+^[LR][123]$
+# The longest name Lichess allows, in the Profile pictures, whole and cut.
+A_Rather_Long_Nam\S*

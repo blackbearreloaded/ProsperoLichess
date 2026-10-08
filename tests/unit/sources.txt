@@ -1,0 +1,47 @@
+# Platform-neutral application sources compiled into build/tests/unit_tests.
+# One repository-relative path (or glob) per line; '#' starts a comment.
+# Nothing here may need OpenGL: screens only record draw lists, and the app's
+# composition lives in src/app/app_render.cpp, which is left out.
+host/platform_host.cpp
+src/audio/cues.cpp
+src/audio/mixer.cpp
+src/audio/music.cpp
+src/third_party/stb/vorbis.c
+src/third_party/stb/image.c
+src/audio/wav.cpp
+src/core/frame_stats.cpp
+src/core/input.cpp
+src/core/language.cpp
+src/core/save_file.cpp
+src/core/settings.cpp
+src/core/strings.cpp
+src/core/version.cpp
+src/gfx/draw_list.cpp
+src/gfx/bidi.cpp
+src/gfx/font.cpp
+src/gfx/system_fonts.cpp
+src/gfx/system_glyphs.cpp
+src/third_party/harfbuzz/harfbuzz.cpp
+src/third_party/stb/truetype.c
+src/gfx/triangulate.cpp
+src/chess/*.cpp
+host/curl_platform_host.cpp
+host/listener_posix.cpp
+host/random_host.cpp
+src/net/*.cpp
+src/third_party/yyjson/yyjson.c
+src/third_party/qrcodegen/qrcodegen.c
+src/board/*.cpp
+src/puzzles/puzzle.cpp
+src/lichess/*.cpp
+src/puzzles/pack.cpp
+src/core/test_script.cpp
+src/ui/*.cpp
+src/ui/components/*.cpp
+src/puzzles/records.cpp
+src/puzzles/pack_source.cpp
+src/app/app.cpp
+src/app/chrome.cpp
+src/app/look.cpp
+src/modes/*.cpp
+src/net/update_kit.c

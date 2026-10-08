@@ -1,0 +1,10 @@
+# Values the Puzzles page and the puzzle screen put into their text and do not
+# translate, for "tools/strings.py unmarked": one regular expression a line.
+# What a line matches is taken out of a text before the text is checked.
+
+# A puzzle's number on Lichess: "#c8sj6".
+^\#[0-9A-Za-z]{5}$
+# The letters of the files beside the board.
+^[a-h]$
+# The names on the shoulder buttons' glyphs (L2 and R2 stand beside the difficulties).
+^[LR][123]$

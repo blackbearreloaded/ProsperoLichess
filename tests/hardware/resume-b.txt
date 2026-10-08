@@ -1,0 +1,58 @@
+# ProsperoLichess - Hardware saved game, run 2 of 2: the home screen and the Play page offer the game, and it resumes.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# The same storage as resume-a.txt, kept.
+guest
+wait 300
+mark home
+nav down
+wait 60
+mark home-shelf
+press menu
+nav down
+nav down
+wait 60
+press confirm
+wait 30
+press page_next
+wait 20
+press page_next
+wait 60
+mark play-friend-saved
+nav down
+wait 20
+press confirm
+wait 90
+mark resumed
+# Black replies Nc6: the board is turned to Black and the cursor waits on e7.
+nav right
+nav right
+nav right
+nav down
+press confirm
+nav left
+nav up
+nav up
+press confirm
+wait 80
+mark black-replied
+# The menu starts a new game.
+press menu
+wait 40
+nav down
+nav down
+nav down
+nav down
+wait 10
+press confirm
+wait 90
+mark new-game
+press menu
+wait 40
+nav up
+wait 10
+press confirm
+wait 90
+mark end
+wait 600
+quit

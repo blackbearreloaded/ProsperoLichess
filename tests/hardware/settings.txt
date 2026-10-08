@@ -1,0 +1,126 @@
+# ProsperoLichess - Hardware settings run 1 of 2: change every setting, restart the display at each size.
+# Copyright (C) 2026 BlackBearReloaded
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Uses storage of its own, emptied first, so the player's settings stay as
+# they are. settings-kept.txt is the second run: it only looks.
+guest
+fresh
+wait 300
+mark home
+# Settings is the last entry of the rail.
+press menu
+nav down
+nav down
+nav down
+nav down
+nav down
+wait 60
+press confirm
+wait 30
+mark board
+# Board: the next board finish and piece set, coordinates and legal moves off.
+press confirm
+wait 20
+nav right
+wait 40
+nav down
+nav right
+wait 60
+nav down
+press confirm
+nav down
+press confirm
+wait 60
+mark board-changed
+press back
+wait 20
+# Play: the three switches off.
+nav down
+wait 30
+press confirm
+wait 20
+press confirm
+nav down
+press confirm
+nav down
+press confirm
+wait 60
+mark play-changed
+press back
+wait 20
+# Sound: music down three, game sounds down two, interface up two.
+nav down
+wait 30
+press confirm
+wait 20
+nav left
+nav left
+nav left
+nav down
+nav left
+nav left
+nav down
+nav right
+nav right
+wait 60
+mark sound-changed
+press back
+wait 20
+# Controller: vibration off (the buttons stay as they are).
+nav down
+wait 30
+press confirm
+wait 20
+nav down
+press confirm
+wait 60
+mark controller-changed
+press back
+wait 20
+# Display: the picture restarts at each size; reduced motion on.
+nav down
+wait 30
+press confirm
+wait 20
+mark display-4k
+nav left
+wait 300
+mark display-1440p
+wait 660
+mark display-1440p-stats
+nav left
+wait 300
+mark display-1080p
+wait 660
+mark display-1080p-stats
+nav right
+wait 300
+nav right
+wait 300
+mark display-4k-again
+nav down
+press confirm
+wait 40
+nav down
+press confirm
+wait 60
+mark display-changed
+press back
+wait 20
+# About scrolls.
+nav down
+wait 30
+press confirm
+wait 20
+nav down
+nav down
+nav down
+nav down
+wait 60
+mark about-scrolled
+press back
+press back
+wait 60
+mark end
+wait 600
+quit

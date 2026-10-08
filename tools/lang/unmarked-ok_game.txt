@@ -1,0 +1,12 @@
+# Values the game screens put on screen and do not translate, for
+# "tools/strings.py unmarked": one regular expression a line.
+
+# The board's coordinates: the files a to h (the ranks are digits).
+^[a-h]$
+# The first letter of a player's name, on the portrait beside it.
+^[A-Z]$
+# A name in capitals: the opponent on the card of an offer, Stockfish on the
+# waiting screen's ticket.
+\b(?:NORDICKNIGHT|BLACKBEAR|STOCKFISH)\b
+# What the glyphs of the shoulder buttons say, in the hint row.
+^[LR][123]$

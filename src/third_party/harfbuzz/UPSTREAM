@@ -1,0 +1,5 @@
+HarfBuzz 12.3.2
+https://github.com/harfbuzz/harfbuzz/releases/download/12.3.2/harfbuzz-12.3.2.tar.xz
+sha256 6f6db164359a2da5a84ef826615b448b33e6306067ad829d85d5b0bf936f1bb8
+fetched by tools/setup-native-dependencies.sh into .deps/native/harfbuzz (not stored here)
+licence: Old MIT (COPYING in the archive)
