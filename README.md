@@ -185,6 +185,11 @@ tests, reproduces `runtime/libc.prx`, builds `PPSA99009.zip`,
 and writes `SHA256SUMS` for it. A pull request's build is named by
 its number and commit: see [Pull-request builds](docs/PULL_REQUEST_BUILDS.md).
 
+The workflow also holds a step that signs the ZIP's build provenance; it is skipped while this
+repository is private. Once this repository is public, a release ZIP built by the workflow can
+be checked with `gh attestation verify PPSA99009.zip -R blackbearreloaded/ProsperoLichess` (GitHub CLI);
+that covers releases built by GitHub Actions from then on, not earlier ones.
+
 Pushing a tag equal to `contentVersion` publishes a GitHub Release with those
 files, built from the tagged commit. A build on `main` is started by hand
 (**Actions**, **Build**, **Run workflow**) and publishes nothing.

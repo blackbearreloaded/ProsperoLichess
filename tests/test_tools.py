@@ -186,6 +186,22 @@ class ToolTests(unittest.TestCase):
         self.assertIn("run: make app", workflow)
         self.assertIn('sha256sum "$TITLE_ID.zip" > SHA256SUMS', workflow)
         self.assertIn('assets=("release/$FOLDER_ZIP" "release/$CHECKSUM")', workflow)
+        # The finished ZIP is attested (action pinned by commit) after its check, before the upload.
+        attest = workflow.index(
+            "uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2\n"
+            "        with:\n"
+            "          subject-path: dist/${{ env.TITLE_ID }}.zip\n"
+        )
+        self.assertEqual(workflow.count("actions/attest@"), 1)
+        self.assertIn(
+            "if: github.event_name != 'pull_request' && !github.event.repository.private\n"
+            "        uses: actions/attest@",
+            workflow,
+        )
+        self.assertLess(workflow.index("- name: Check the app-folder ZIP"), attest)
+        self.assertLess(workflow.index("- name: Write release checksums"), attest)
+        self.assertLess(attest, workflow.index("- name: Upload build"))
+        self.assertIn("      id-token: write\n      attestations: write\n", workflow)
 
     def test_native_writer_anchors_relro_and_checks_load_congruence(self):
         source = (ROOT / "tooling/native/sce_module_writer.cpp").read_text(
