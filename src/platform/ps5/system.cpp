@@ -64,7 +64,7 @@ void sleep_us(std::uint32_t microseconds)
 
 int system_language(int *id)
 {
-    // Parameter 1 is the system language (ps5-system-language-research).
+    // Parameter 1 is the system language.
     return sceSystemServiceParamGetInt(1, id);
 }
 
