@@ -137,8 +137,8 @@ sudo apt install curl git make pkg-config python3 python3-venv tar unzip wget \
 make doctor
 ```
 
-The build downloads and verifies the public PS5 Payload SDK, zlib, GoogleTest,
-the ps5-opengl SDK and packaging tools below ignored `.deps/` directories.
+The build downloads and verifies the public PS5 Payload SDK, zlib, GoogleTest
+and the ps5-opengl SDK below ignored `.deps/` directories.
 Nothing is installed globally by the project build. See
 [Getting started](docs/GETTING_STARTED.md) and
 [Native tooling](docs/NATIVE_TOOLING.md) for clean-machine setup details.
@@ -181,17 +181,17 @@ tests, reproduces `runtime/libc.prx`, builds `PPSA99009.zip`,
 and writes `SHA256SUMS` for it. A pull request's build is named by
 its number and commit: see [Pull-request builds](docs/PULL_REQUEST_BUILDS.md).
 
-The workflow also holds a step that signs the ZIP's build provenance; it is skipped while this
-repository is private. Once this repository is public, a release ZIP built by the workflow can
-be checked with `gh attestation verify PPSA99009.zip -R blackbearreloaded/ProsperoLichess` (GitHub CLI);
-that covers releases built by GitHub Actions from then on, not earlier ones.
+Releases are attested: the workflow signs the ZIP's build provenance, and a downloaded release
+ZIP can be checked with `gh attestation verify PPSA99009.zip -R blackbearreloaded/ProsperoLichess`
+(GitHub CLI). That covers releases built since the step was added; 01.000.000 was built before
+it and has no attestation.
 
 Pushing a tag equal to `contentVersion` publishes a GitHub Release with those
 files, built from the tagged commit. A build on `main` is started by hand
 (**Actions**, **Build**, **Run workflow**) and publishes nothing.
 
-A release's files are the ones the workflow run for its tag built (and, in a public
-repository, attested); none is attached by hand. If the release already exists without a ZIP
+A release's files are the ones the workflow run for its tag built and
+attested; none is attached by hand. If the release already exists without a ZIP
 (notes written ahead, or a draft), the run adds its files and leaves the title and notes as
 they are. If it already has a ZIP, the run uploads nothing, replaces nothing and prints a
 warning: that file did not come from this run.
@@ -214,7 +214,7 @@ For a folder install, the in-app **Update now** path downloads the release ZIP,
 verifies its catalog SHA-256, unpacks it beside the app, and hands the final
 atomic replacement to `self-updater.elf`. The app closes only after the helper
 accepts the job. Circle cancels before replacement; failures leave the current
-installation untouched and offer a retry. A locally built `.ffpkg` image is
+installation untouched and offer a retry. An install from an older build's image is
 replaced by hand with the app fully closed: a mounted image cannot update
 itself in place.
 

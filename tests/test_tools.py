@@ -135,8 +135,10 @@ class ToolTests(unittest.TestCase):
             mock_make = mock_bin / "make"
             mock_make.write_text(
                 "#!/usr/bin/env bash\n"
-                "mkdir -p \"$MOCK_ROOT/dist\"\n"
-                "printf package > \"$MOCK_ROOT/dist/PPSA12345.ffpkg\"\n",
+                "printf '%s\\n' \"$*\" > \"$MOCK_ROOT/make-arguments\"\n"
+                "mkdir -p \"$MOCK_ROOT/dist/PPSA12345/sce_sys\"\n"
+                "printf eboot > \"$MOCK_ROOT/dist/PPSA12345/eboot.bin\"\n"
+                "printf param > \"$MOCK_ROOT/dist/PPSA12345/sce_sys/param.json\"\n",
                 encoding="utf-8",
             )
             mock_make.chmod(0o755)
@@ -145,6 +147,7 @@ class ToolTests(unittest.TestCase):
             environment.update(
                 PS5_HOST="192.0.2.1",
                 DEPLOY_DRY_RUN="1",
+                # An image can no longer be asked for: the folder is deployed whatever this says.
                 DEPLOY_FORMAT="ffpkg",
                 MOCK_ROOT=str(sandbox),
                 PATH=f"{mock_bin}{os.pathsep}{environment['PATH']}",
@@ -158,7 +161,11 @@ class ToolTests(unittest.TestCase):
                 text=True,
             )
             self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertIn("/data/homebrew/PPSA12345.ffpkg", result.stdout)
+            self.assertIn("/data/homebrew/PPSA12345/\n", result.stdout)
+            self.assertIn("Would publish 2 files", result.stdout)
+            self.assertNotIn("ffpkg", result.stdout)
+            arguments = (sandbox / "make-arguments").read_text(encoding="utf-8").split()
+            self.assertEqual(arguments[-1], "app")
             self.assertIn("no network request was sent", result.stdout)
 
     def test_pull_request_builds_are_named_and_labelled(self):
@@ -188,13 +195,32 @@ class ToolTests(unittest.TestCase):
             "build.ps1",
             "tools/build.sh",
             "tools/deploy.sh",
-            "tools/setup-packaging-dependencies.sh",
         ]
         for name in built_by:
             text = (ROOT / name).read_text(encoding="utf-8").lower()
             self.assertNotIn("ffpfsc", text, name)
             self.assertNotIn("mkpfs", text, name)
         self.assertFalse((ROOT / "tools/setup-mkpfs-tooling.ps1").exists())
+        # No local target builds an image either: the app folder and its ZIP are all there is.
+        for name in [*built_by, "tools/doctor.sh", ".env.example"]:
+            text = (ROOT / name).read_text(encoding="utf-8")
+            self.assertNotIn("DEPLOY_FORMAT", text, name)
+            self.assertNotIn("ufs2tool", text.lower(), name)
+            # The deploy script still removes an image an older build left on the console.
+            if name != "tools/deploy.sh":
+                self.assertNotIn("ffpkg", text.lower(), name)
+        for gone in (
+            "tools/setup-ffpkg-tooling.ps1",
+            "tools/setup-packaging-dependencies.sh",
+            "docs/FFPKG.md",
+        ):
+            self.assertFalse((ROOT / gone).exists(), gone)
+        for target in ("ffpkg", "ffpfsc", "packages"):
+            result = subprocess.run(
+                ["make", "-n", target], cwd=ROOT, check=False, capture_output=True, text=True
+            )
+            self.assertNotEqual(result.returncode, 0, target)
+            self.assertIn("No rule to make target", result.stderr, target)
         self.assertIn("run: make app", workflow)
         self.assertIn('sha256sum "$TITLE_ID.zip" > SHA256SUMS', workflow)
         self.assertIn('assets=("release/$FOLDER_ZIP" "release/$CHECKSUM")', workflow)

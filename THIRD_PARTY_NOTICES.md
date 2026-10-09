@@ -25,8 +25,8 @@ ProsperoLichess exists thanks to the maintainers and contributors of:
   [Inter](https://github.com/rsms/inter),
   [Montserrat](https://github.com/JulietaUla/Montserrat) and
   [DejaVu](https://dejavu-fonts.github.io/);
-- [UFS2Tool](https://github.com/SvenGDK/UFS2Tool), LLVM/Clang, Python, zlib and
-  GoogleTest for build, packaging and validation tooling.
+- LLVM/Clang, Python, zlib and GoogleTest for build, packaging and validation
+  tooling.
 
 ProsperoLichess is Copyright (C) 2026 BlackBearReloaded and licensed under
 GPL-3.0-or-later. It is built on `ps5-native-app-boilerplate`; the notices
@@ -251,14 +251,6 @@ release `v0.40.2`, verifies its published SHA-256, and extracts only the
 replace the pinned SDK or install files globally. PacBrew recipes and every
 linked third-party library retain their upstream licenses; applications must
 review those terms before redistribution.
-
-## Optional UFS2Tool dependency
-
-When `.ffpkg` output is requested, the platform bootstrapper fetches
-[SvenGDK/UFS2Tool](https://github.com/SvenGDK/UFS2Tool) at commit
-`b5307a60d5b4e3a68ba680e0e33cfadf05017c77` into the ignored
-`.deps/UFS2Tool` cache and builds it with the host .NET SDK. UFS2Tool is
-BSD-2-Clause software and is not distributed by this repository.
 
 ## Independently authored runtime shim
 
