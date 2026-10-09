@@ -117,7 +117,7 @@ class ToolTests(unittest.TestCase):
         param = json.loads((ROOT / "sce_sys/param.json").read_text(encoding="utf-8"))
         title = param["titleId"]
         self.assertIn(f"/data/homebrew/{title}/", result.stdout)
-        self.assertIn(f"{title}.{{ffpkg,ffpfsc}}", result.stdout)
+        self.assertIn(f"/data/homebrew/{title}.ffpkg", result.stdout)
         self.assertIn("no network request was sent", result.stdout)
 
     def test_deploy_dry_run_uses_mocked_build_and_no_network(self):
@@ -181,8 +181,20 @@ class ToolTests(unittest.TestCase):
 
     def test_automation_builds_the_zip_only(self):
         workflow = (ROOT / ".github/workflows/tooling.yml").read_text(encoding="utf-8")
-        self.assertNotIn("ffpfsc", workflow.lower())
-        self.assertNotIn("MkPFS", workflow)
+        # The compressed image is gone from every place that builds or deploys.
+        built_by = [
+            ".github/workflows/tooling.yml",
+            "Makefile",
+            "build.ps1",
+            "tools/build.sh",
+            "tools/deploy.sh",
+            "tools/setup-packaging-dependencies.sh",
+        ]
+        for name in built_by:
+            text = (ROOT / name).read_text(encoding="utf-8").lower()
+            self.assertNotIn("ffpfsc", text, name)
+            self.assertNotIn("mkpfs", text, name)
+        self.assertFalse((ROOT / "tools/setup-mkpfs-tooling.ps1").exists())
         self.assertIn("run: make app", workflow)
         self.assertIn('sha256sum "$TITLE_ID.zip" > SHA256SUMS', workflow)
         self.assertIn('assets=("release/$FOLDER_ZIP" "release/$CHECKSUM")', workflow)
@@ -202,6 +214,29 @@ class ToolTests(unittest.TestCase):
         self.assertLess(workflow.index("- name: Write release checksums"), attest)
         self.assertLess(attest, workflow.index("- name: Upload build"))
         self.assertIn("      id-token: write\n      attestations: write\n", workflow)
+
+    def test_release_never_replaces_or_removes_a_file(self):
+        workflow = (ROOT / ".github/workflows/tooling.yml").read_text(encoding="utf-8")
+        self.assertNotIn("--clobber", workflow)
+        self.assertNotIn("delete-asset", workflow)
+        self.assertNotIn("release delete", workflow)
+        self.assertNotIn("release edit", workflow)
+        publish = workflow[workflow.index("- name: Publish GitHub release"):]
+        # A release that already has a ZIP gets nothing and the run says so.
+        self.assertIn("existing_zip=$(grep -i -m1 '\\.zip$' <<< \"$existing\" || true)", publish)
+        self.assertEqual(publish.count("::warning title=Release file not from this run::"), 2)
+        self.assertIn(
+            'gh release upload "$VERSION" "$asset" --repo "$GITHUB_REPOSITORY"\n', publish
+        )
+        # No release yet: created with the files of this run, as before.
+        self.assertIn(
+            'gh release create "$VERSION" "${assets[@]}" \\\n'
+            '              --repo "$GITHUB_REPOSITORY" \\\n'
+            '              --target "$GITHUB_SHA" \\\n'
+            "              --generate-notes \\\n"
+            '              --title "ProsperoLichess $VERSION"\n',
+            publish,
+        )
 
     def test_native_writer_anchors_relro_and_checks_load_congruence(self):
         source = (ROOT / "tooling/native/sce_module_writer.cpp").read_text(

@@ -238,15 +238,23 @@ jobs:
         run: |
           set -euo pipefail
           assets=("release/$FOLDER_ZIP" "release/$CHECKSUM")
-          folder_zip_name="${FOLDER_ZIP##*/}"
-          checksum_name="${CHECKSUM##*/}"
+          # A release's files are the ones this run built. A file already on the release is
+          # never replaced or removed: its checksum may be recorded elsewhere.
           if gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            while IFS= read -r old_asset; do
-              if [[ $old_asset != "$folder_zip_name" && $old_asset != "$checksum_name" ]]; then
-                gh release delete-asset "$VERSION" "$old_asset" --yes --repo "$GITHUB_REPOSITORY"
-              fi
-            done < <(gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name')
-            gh release upload "$VERSION" "${assets[@]}" --clobber --repo "$GITHUB_REPOSITORY"
+            # The release exists (notes written ahead, or a draft): its title and notes stay.
+            existing=$(gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name')
+            existing_zip=$(grep -i -m1 '\.zip$' <<< "$existing" || true)
+            if [[ -n $existing_zip ]]; then
+              echo "::warning title=Release file not from this run::A release for $VERSION already has $existing_zip; it was not replaced. It was not published by this run and may have no attestation."
+            else
+              for asset in "${assets[@]}"; do
+                if grep -Fxq -- "${asset##*/}" <<< "$existing"; then
+                  echo "::warning title=Release file not from this run::A release for $VERSION already has ${asset##*/}; it was not replaced. It was not published by this run and may have no attestation."
+                else
+                  gh release upload "$VERSION" "$asset" --repo "$GITHUB_REPOSITORY"
+                fi
+              done
+            fi
           else
             # Creates the version tag at the commit that was just built and tested.
             gh release create "$VERSION" "${assets[@]}" \

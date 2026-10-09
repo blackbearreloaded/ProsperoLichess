@@ -149,9 +149,6 @@ Nothing is installed globally by the project build. See
 ```bash
 # Title folder and its ZIP: what CI builds and a release carries.
 make
-
-# Optional compressed image, for local use only.
-make ffpfsc
 ```
 
 Outputs are written to:
@@ -159,7 +156,6 @@ Outputs are written to:
 ```text
 dist/PPSA99009/           complete title folder
 dist/PPSA99009.zip        folder archive
-dist/PPSA99009.ffpfsc     compressed image (make ffpfsc only)
 ```
 
 Useful development gates are:
@@ -194,6 +190,12 @@ Pushing a tag equal to `contentVersion` publishes a GitHub Release with those
 files, built from the tagged commit. A build on `main` is started by hand
 (**Actions**, **Build**, **Run workflow**) and publishes nothing.
 
+A release's files are the ones the workflow run for its tag built (and, in a public
+repository, attested); none is attached by hand. If the release already exists without a ZIP
+(notes written ahead, or a draft), the run adds its files and leaves the title and notes as
+they are. If it already has a ZIP, the run uploads nothing, replaces nothing and prints a
+warning: that file did not come from this run.
+
 ## Install or update
 
 1. Download `PPSA99009.zip` from a GitHub release and verify it with
@@ -212,8 +214,9 @@ For a folder install, the in-app **Update now** path downloads the release ZIP,
 verifies its catalog SHA-256, unpacks it beside the app, and hands the final
 atomic replacement to `self-updater.elf`. The app closes only after the helper
 accepts the job. Circle cancels before replacement; failures leave the current
-installation untouched and offer a retry. Fully close and manually replace
-`.ffpfsc` images because a mounted image cannot update itself in place.
+installation untouched and offer a retry. A locally built `.ffpkg` image is
+replaced by hand with the app fully closed: a mounted image cannot update
+itself in place.
 
 ## Deploy
 

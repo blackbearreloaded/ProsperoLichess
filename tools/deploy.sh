@@ -22,8 +22,8 @@ password=${PS5_FTP_PASSWORD:-codex}
     echo "usage: tools/deploy.sh [undeploy]" >&2
     exit 2
 }
-[[ $action == undeploy || $format == folder || $format == ffpfsc || $format == ffpkg ]] || {
-    echo "DEPLOY_FORMAT must be folder, ffpfsc, or ffpkg" >&2
+[[ $action == undeploy || $format == folder || $format == ffpkg ]] || {
+    echo "DEPLOY_FORMAT must be folder or ffpkg" >&2
     exit 2
 }
 [[ $host =~ ^[A-Za-z0-9][A-Za-z0-9.-]*$ ]] || {
@@ -51,7 +51,7 @@ base_url="ftp://$host:$port/data/homebrew"
 if [[ $action == undeploy ]]; then
     printf '==> [undeploy] Title: %s\n' "$title_id"
     printf '==> [undeploy] Folder: %s/%s/\n' "$base_url" "$title_id"
-    printf '==> [undeploy] Images: %s/%s.{ffpkg,ffpfsc}\n' "$base_url" "$title_id"
+    printf '==> [undeploy] Image: %s/%s.ffpkg\n' "$base_url" "$title_id"
 
     if [[ ${DEPLOY_DRY_RUN:-0} == 1 ]]; then
         echo "==> [undeploy] Dry run complete; no network request was sent"
@@ -111,7 +111,7 @@ with FTP() as ftp:
     ftp.connect(host, int(port), timeout=15)
     ftp.login(user, password)
     removed = remove_entry(ftp, join(homebrew_root, title_id))
-    for suffix in ("ffpkg", "ffpfsc"):
+    for suffix in ("ffpkg",):
         removed |= remove_entry(ftp, join(homebrew_root, f"{title_id}.{suffix}"))
         removed |= remove_entry(ftp, join(homebrew_root, f".{title_id}.{suffix}.upload"))
     try:
@@ -265,7 +265,7 @@ with FTP() as ftp:
         print("==> [deploy] Uploading complete image under a temporary name")
         with artifact.open("rb") as source:
             ftp.storbinary(f"STOR {temporary}", source, blocksize=256 * 1024)
-        for suffix in ("ffpfsc", "ffpkg"):
+        for suffix in ("ffpkg",):
             old_name = f"{title_id}.{suffix}"
             if remove_if_present(ftp, join(homebrew_root, old_name)):
                 print(f"==> [deploy] Removed previous {old_name} image")
