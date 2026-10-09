@@ -135,9 +135,8 @@ the font code around it come from ProsperoEden by the same author.
 ## Console language ids
 
 `src/third_party/ps5_system_language/ps5_system_language.hpp` lists the PS5's
-system languages and their tags. It comes unmodified from
-[ps5-system-language-research](https://github.com/blackbearreloaded/ps5-system-language-research),
-Copyright (C) 2026 BlackBearReloaded, at the commit recorded in `UPSTREAM`.
+system languages and their tags. It was written for
+this project, Copyright (C) 2026 BlackBearReloaded.
 
 ## JSON parsing
 
